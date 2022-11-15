@@ -1,7 +1,8 @@
-- NOM : 
-- PRÉNOM :
+- NOM : Amemoutou
+- PRÉNOM : Jael
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/U01egtx8F43YePGl8QpYJ8/Maquettes-projet-individuel-%E2%80%94-Ja%C3%ABl-Amemoutou?node-id=833%3A783&t=zoA3afWf15noMnQM-1
+
 
 # Structure de départ pour le projet individuel.
 
