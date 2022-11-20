@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIs0pen: false}  ">
  <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=, initial-scale=1.0">
        <title>Sweet Old Times</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
  </head>
 
  <header>
    <h1> Sweet Old Times </h1>
+   
      <a>
        <img src="/public/img/Icons/drapeau-francais-040m-x-060m 1.svg" alt="icone francais">
-       <img src="/public/img/Icons/fi-rr-menu-burger.svg" alt="menu menu-burger">
        <img src="/public/img/background.webp" alt= "background" >
-    </a>
- </header>
- 
- <nav>   
+     </a>
+ <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/fi-rr-menu-burger.svg" alt="menu menu-burger"></a> </button>
+ <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
    <button><img src="/public/img/Icons/drapeau-francais-040m-x-060m 1.svg" alt="icone francais"></a> </button>
    <button> <img src="/public/img/Icons/croix.svg" alt="" srcset=""></button>
        <ul>
@@ -37,7 +37,7 @@
             <li> <img src="/public/img/Icons/fi-rr-portrait-1.svg" alt="portrait"> </a> <a href="#">Autres projets </li></a>
         </ul> 
  </nav>
-
+</header>
 
   <body>
 
@@ -143,8 +143,14 @@
 
    <button> 
        <a
-          href="">
+          href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
          <img src="/public/img/Icons/linkedin (3) 2.svg" alt="linkedin"> 
+      </a> 
+    </button>
+    <button>
+      <a 
+        href="https://www.instagram.com/jaja_9745/">
+        <img src="/public/img/Icons/instagram (3) 2.svg" alt="instagram"> 
       </a> 
     </button>
  </footer>
