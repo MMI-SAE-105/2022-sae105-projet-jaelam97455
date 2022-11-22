@@ -18,8 +18,10 @@
      </a>
  <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
  <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
-   <button><img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais"></a> </button>
-   <button> <img src="/public/img/Icons/croix.svg" alt="" srcset=""></button>
+    </a> 
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
+       <img src="/public/img/Icons/croix.svg" alt="croix" srcset="">
+    </a> 
        <ul>
          <h4> Articles </h4>
               <li> <a> <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> </a> <a href="reunion.html">Cirque de Mafate </a> </li> 
@@ -36,8 +38,8 @@
             <li> <img src="/public/img/Icons/envelope-download.svg" alt="livre"> </a> <a href="#">Contact </li></a>
             <li> <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> </a> <a href="#">Autres projets </li></a>
         </ul> 
- </nav>
-</header>
+   </nav>
+ </header>
 
   <body>
 
@@ -62,97 +64,97 @@
       </section> 
 
       <section>
-           <a> <img src="/public/img/accueil/cirque-mafate.webp" alt="mafate"></a>
-           <h3> Mafate - lieu emblématique de la Réunion</h3>
-           <p> La beauté des lieux naturels : un moyen de se ressourcer et de revenir à l’essentiel</p>
-           <button>En savoir plus</button>
+           <article> 
+             <a> <img src="/public/img/accueil/cirque-mafate.webp" alt="mafate"></a>
+             <h3> Mafate - lieu emblématique de la Réunion</h3>
+             <p> La beauté des lieux naturels : un moyen de se ressourcer et de revenir à l’essentiel</p>
+             <button>En savoir plus</button>
+          </article>
       </section>
 
       <section>
-          <a> <img src="/public/img/accueil/twenty-one-pilots.webp" alt="twentyonepilots"></a>
-          <h3> Stressed out - Twenty One Pilot pilier du rock alternatif</h3>
-          <p> Au delà du rythme entrainant, une chanson au sens plus profond</p>
-          <button>En savoir plus</button>
+        <article>
+           <a> <img src="/public/img/accueil/twenty-one-pilots.webp" alt="twentyonepilots"></a>
+           <h3> Stressed out - Twenty One Pilot pilier du rock alternatif</h3>
+           <p> Au delà du rythme entrainant, une chanson au sens plus profond</p>
+           <button>En savoir plus</button>
+        </article>
        </section>
 
     
       <section>
-        <a> <img src="/public/img/accueil/Blue-flag.webp" alt="Blue_flag"></a>
-        <h3>Blue Flag : un panorama réaliste de la jeunesse</h3>
-        <p> Un manga relatant les peines joies d’une jeunesse au carrefour de leur vie</p>
-        <button>En savoir plus</button>
+        <article>
+           <a> <img src="/public/img/accueil/Blue-flag.webp" alt="Blue_flag"></a>
+           <h3>Blue Flag : un panorama réaliste de la jeunesse</h3>
+           <p> Un manga relatant les peines joies d’une jeunesse au carrefour de leur vie</p>
+           <button>En savoir plus</button>
+        </article>
      </section>
 
      <section>
-       <a> <img src="/public/img/accueil/Le-Voyage-de-Chihiro.webp" alt="Le_Voyage_de_Chihiro"></a>
-       <h3> Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h3>
-       <p> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux...</p>
-       <button>En savoir plus</button>
+      <article>
+         <a> <img src="/public/img/accueil/Le-Voyage-de-Chihiro.webp" alt="Le_Voyage_de_Chihiro"></a>
+         <h3> Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h3>
+         <p> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux...</p>
+         <button>En savoir plus</button>
+      </article>
      </section>
 
       <section>
-        <a> <img src="/public/img/accueil/crainte-changementclimatique.webp" alt="crainte"></a>
-        <h3> Notre génération face à de nouveaux enjeux</h3>
-        <p> Notre génération devra relever de nombreux défis et notre avenir...</p>
-        <button>En savoir plus</button>
+        <article>
+            <a> <img src="/public/img/accueil/crainte-changementclimatique.webp" alt="crainte"></a>
+           <h3> Notre génération face à de nouveaux enjeux</h3>
+            <p> Notre génération devra relever de nombreux défis et notre avenir...</p>
+            <button>En savoir plus</button>
+      </article>
      </section>
 
      <section>
-       <a> <img src="/public/img/accueil/espoir-normalisationparole.webp" alt="parole"></a>
-       <h3> Une génération qui normalise la prise de parole</h3>
-       <p> Une génération qui ose parler de sujets longt-emps délaissés afin de faire entendre...</p>
-       <button>En savoir plus</button>
+      <article> 
+         <a> <img src="/public/img/accueil/espoir-normalisationparole.webp" alt="parole"></a>
+         <h3> Une génération qui normalise la prise de parole</h3>
+         <p> Une génération qui ose parler de sujets longt-emps délaissés afin de faire entendre...</p>
+         <button>En savoir plus</button>
+      </article>
     </section>
+
   </body>
 
  <footer>
    <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
-     <button>
         <a 
           href="http://mmimontbeliard.com/">
           <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi"> 
        </a> 
-      </button>
-
-     <button>
+  
        <a 
          href="https://www.instagram.com/mmi_montbeliard/">
          <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
        </a> 
-     </button>
-
-     <button> 
-        <a
+       <a
          href="https://www.linkedin.com/school/mmimontbeliard/">
          <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
-        </a>
-       </button>
+      </a>
 
-
-     <button>
-       <a
+      <a
          href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
          <img src="/public/img/Icons/youtube.svg" alt="youtube"> 
-       </a>
-      </button>
-
-    <button><a><img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow"> </a> </button>
+      </a>
+      
+     <a><img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow"> </a> 
 
     <p> Jaël Amemoutou groupe A1 MMI</p>
     <a href="mailto:jaelam302@gmail.com"> jaelam302@gmail.com </a> 
-
-   <button> 
-       <a
+      <a
           href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
          <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
       </a> 
-    </button>
-    <button>
+      
       <a 
         href="https://www.instagram.com/jaja_9745/">
         <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
       </a> 
-    </button>
+    
  </footer>
 
 </html>
