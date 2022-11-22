@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIs0pen: false}  ">
+<html lang="fr">
  <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=, initial-scale=1.0">
-       <title>Sweet Old Times</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Sweet Old Times</title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
  </head>
 
  <header>
    <h1> Sweet Old Times </h1>
-   
      <a>
        <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
        <img src="/public/img/accueil/background.webp" alt= "background" >
      </a>
- <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
- <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
-    </a> 
+    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
+   <nav>   
+     <a> 
        <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-       <img src="/public/img/Icons/croix.svg" alt="croix" srcset="">
-    </a> 
-       <ul>
-         <h4> Articles </h4>
-              <li> <a> <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> </a> <a href="reunion.html">Cirque de Mafate </a> </li> 
-              <li><a> <img src="/public/img/Icons/Music.svg" alt="musique"> </a> <a href="#"> Stressed out - Twenty One Pilots</li></a>
-              <li> <img src="/public/img/Icons/book-alt.svg" alt="livre"> </a> <a href="#">Blue Flag - Kaito </li></a>
-              <li> <img src="/public/img/Icons/film.svg" alt="film"> </a> <a href="#">Le Voyage de Chihiro - Hayao Miyazaki</li></a>
-              <li> <img src="/public/img/Icons/film-blanc.svg" alt="film"> </a> <a href="#">Filmographie Miyazaki</li></a>
-              <li> <img src="/public/img/Icons/world.svg" alt="world"> </a> <a href="#">Une crainte/regret pour ma génération </li></a>
-              <li> <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> </a> <a href="#">Un espoir pour ma génération</li></a>
+       <img src="/public/img/Icons/croix.svg" alt="croix">
+     </a> 
 
+         <h4> Articles </h4>
+       <ul>
+              <li> 
+                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
+              </li> 
+              <li>
+                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="#"> Stressed out - Twenty One Pilots </a> 
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="#">Blue Flag - Kaito </a>
+             </li> 
+              
+              <li> 
+                <img src="/public/img/Icons/film.svg" alt="film"> <a href="#">Le Voyage de Chihiro - Hayao Miyazaki </a>
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
+              </li>
+              <li> 
+                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
+              </li>
+
+              <li> 
+                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
+              </li>
+       </ul> 
          <h4> Informations complémentaires </h4>
-            <li> <img src="/public/img/Icons/portrait.svg" alt="portrait"> </a> <a href="#"> À propos</li></a>
-            <li> <img src="/public/img/Icons/comment-alt.svg" alt="comment"> </a> <a href="#">Glossaire</li></a>
-            <li> <img src="/public/img/Icons/envelope-download.svg" alt="livre"> </a> <a href="#">Contact </li></a>
-            <li> <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> </a> <a href="#">Autres projets </li></a>
-        </ul> 
+        <ul>
+            <li> 
+              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
+            </li>
+            
+            <li> 
+              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
+            </li>
+              
+            <li> 
+              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
+            </li>
+            <li> 
+              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
+            </li>
+        </ul>
    </nav>
  </header>
-
-  <body>
 
      <p>
        Le changement ponctue notre vie jusqu’à notre dernier souffle. Et pourtant il restera toujours difficile à appréhender dans certains cas.
@@ -64,63 +90,50 @@
       </section> 
 
       <section>
-           <article> 
              <a> <img src="/public/img/accueil/cirque-mafate.webp" alt="mafate"></a>
-             <h3> Mafate - lieu emblématique de la Réunion</h3>
+             <h2> Mafate - lieu emblématique de la Réunion</h2>
              <p> La beauté des lieux naturels : un moyen de se ressourcer et de revenir à l’essentiel</p>
-             <button>En savoir plus</button>
-          </article>
-      </section>
+             <p>En savoir plus</p>
+     </section>
 
       <section>
-        <article>
            <a> <img src="/public/img/accueil/twenty-one-pilots.webp" alt="twentyonepilots"></a>
-           <h3> Stressed out - Twenty One Pilot pilier du rock alternatif</h3>
+           <h2> Stressed out - Twenty One Pilot pilier du rock alternatif</h2>
            <p> Au delà du rythme entrainant, une chanson au sens plus profond</p>
-           <button>En savoir plus</button>
-        </article>
+           <p>En savoir plus</p>
        </section>
 
     
       <section>
-        <article>
            <a> <img src="/public/img/accueil/Blue-flag.webp" alt="Blue_flag"></a>
-           <h3>Blue Flag : un panorama réaliste de la jeunesse</h3>
+           <h2>Blue Flag : un panorama réaliste de la jeunesse</h2>
            <p> Un manga relatant les peines joies d’une jeunesse au carrefour de leur vie</p>
-           <button>En savoir plus</button>
-        </article>
+           <p>En savoir plus</p>
      </section>
 
-     <section>
-      <article>
+     <article>
+         <h2> Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h2>
          <a> <img src="/public/img/accueil/Le-Voyage-de-Chihiro.webp" alt="Le_Voyage_de_Chihiro"></a>
-         <h3> Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h3>
          <p> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux...</p>
-         <button>En savoir plus</button>
-      </article>
-     </section>
-
+         <p> En savoir plus</p>
+    </article>
+    
       <section>
-        <article>
             <a> <img src="/public/img/accueil/crainte-changementclimatique.webp" alt="crainte"></a>
-           <h3> Notre génération face à de nouveaux enjeux</h3>
+           <h2> Notre génération face à de nouveaux enjeux</h2>
             <p> Notre génération devra relever de nombreux défis et notre avenir...</p>
             <button>En savoir plus</button>
-      </article>
      </section>
 
      <section>
-      <article> 
          <a> <img src="/public/img/accueil/espoir-normalisationparole.webp" alt="parole"></a>
-         <h3> Une génération qui normalise la prise de parole</h3>
+         <h2> Une génération qui normalise la prise de parole</h2>
          <p> Une génération qui ose parler de sujets longt-emps délaissés afin de faire entendre...</p>
-         <button>En savoir plus</button>
-      </article>
+         <p> En savoir plus</p>
     </section>
 
-  </body>
-
- <footer>
+ <nav> 
+   <footer>
    <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
         <a 
           href="http://mmimontbeliard.com/">
@@ -149,12 +162,12 @@
           href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
          <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
       </a> 
-      
+
       <a 
         href="https://www.instagram.com/jaja_9745/">
         <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
       </a> 
-    
- </footer>
+   </footer>
+ </nav>
 
 </html>
