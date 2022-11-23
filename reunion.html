@@ -1,40 +1,73 @@
 <!DOCTYPE html>
- <html lang="fr" x-data="{menuIs0pen: false}  ">
+<html lang="fr">
  <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=, initial-scale=1.0">
-       <title>Sweet Old Times</title>
-       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Sweet Old Times</title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
  </head>
-   <header>
-      <a>
-          <img src="/public/img/Icons/flèche-retour.svg" alt="flèche_retour">
-          <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old times" >
-      </a>
-     <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
-     <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
-         <button><img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais"></a> </button>
-         <button> <img src="/public/img/Icons/croix.svg" alt="" srcset=""></button>
-         <ul>
-            <h4> Articles </h4>
-                 <li> <a> <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> </a> <a href="reunion.html">Cirque de Mafate </a> </li> 
-                 <li><a> <img src="/public/img/Icons/Music.svg" alt="musique"> </a> <a href="#"> Stressed out - Twenty One Pilots</li></a>
-                 <li> <img src="/public/img/Icons/book-alt.svg" alt="livre"> </a> <a href="#">Blue Flag - Kaito </li></a>
-                 <li> <img src="/public/img/Icons/film.svg" alt="film"> </a> <a href="#">Le Voyage de Chihiro - Hayao Miyazaki</li></a>
-                 <li> <img src="/public/img/Icons/film-blanc.svg" alt="film"> </a> <a href="#">Filmographie Miyazaki</li></a>
-                 <li> <img src="/public/img/Icons/world.svg" alt="world"> </a> <a href="#">Une crainte/regret pour ma génération </li></a>
-                 <li> <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> </a> <a href="#">Un espoir pour ma génération</li></a>
-   
-            <h4> Informations complémentaires </h4>
-               <li> <img src="/public/img/Icons/portrait.svg" alt="portrait"> </a> <a href="#"> À propos</li></a>
-               <li> <img src="/public/img/Icons/comment-alt.svg" alt="comment"> </a> <a href="#">Glossaire</li></a>
-               <li> <img src="/public/img/Icons/envelope-download.svg" alt="livre"> </a> <a href="#">Contact </li></a>
-               <li> <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> </a> <a href="#">Autres projets </li></a>
-           </ul> 
-     </nav>
-  </header>
+
+ <header>
+   <h1> Sweet Old Times </h1>
+     <a>
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
+       <img src="/public/img/accueil/background.webp" alt= "background" >
+     </a>
+    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
+   <nav>   
+     <a> 
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
+       <img src="/public/img/Icons/croix.svg" alt="croix">
+     </a> 
+
+         <h4> Articles </h4>
+       <ul>
+              <li> 
+                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
+              </li> 
+              <li>
+                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="#"> Stressed out - Twenty One Pilots </a> 
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="#">Blue Flag - Kaito </a>
+             </li> 
+              
+              <li> 
+                <img src="/public/img/Icons/film.svg" alt="film"> <a href="#">Le Voyage de Chihiro - Hayao Miyazaki </a>
+              </li>
+
+              <li>
+                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
+              </li>
+              <li> 
+                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
+              </li>
+
+              <li> 
+                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
+              </li>
+       </ul> 
+         <h4> Informations complémentaires </h4>
+        <ul>
+            <li> 
+              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
+            </li>
+            
+            <li> 
+              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
+            </li>
+              
+            <li> 
+              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
+            </li>
+            <li> 
+              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
+            </li>
+        </ul>
+   </nav>
+ </header>
 
   <body>
      <main>
@@ -49,10 +82,10 @@
                   La Réunion est une île au large de l’océan Indien qui offre un panorama de paysages très diversifiés.
                  Le cirque de Mafate est un des lieus authentiques de l’île et qui a de mon point de vue beaucoup de valeur.
              </p>
-              <a> <img src="/public/img/Réunion/Mafate-Reunion.webp" alt="Mafate" srcset=""></a>
+              <a> <img src="/public/img/Réunion/Mafate-Reunion.webp" alt="Mafate"></a>
               <p> Paysage vallonné de Mafate </p>
           <h3> Évasion vers de nouveaux horizons</h3>
-              <a> <img src="/public/img/Réunion/randonnee-mafate.webp" alt="randonneur Mafate" srcset="">  </a>
+              <a> <img src="/public/img/Réunion/randonnee-mafate.webp" alt="randonneur Mafate">  </a>
                  <p> Un photographe devant un point de vu du cirque</p>
               <p> 
                  C’est un endroit dépaysant et reculé de toute urbanisation.Ce qui peut être intéressant
@@ -67,7 +100,7 @@
                   Cela pourrait aider à prendre du recul sur soi et ses inquiétudes, ou d’évaluer plus aisément les changements qui s’opèrent sur nous.
                   Il y a une autre facette positive lorsque nous changeons d’air : découvrir de tels lieux nous permet d’ouvrir notre esprit à de nouvelles perspectives et de nouvelle cultures. 
              </p>
-             <a> <img src="/public/img/Réunion/mafate-jeune-femme-contemplant-cirque.webp" alt="une jeune femme contemplant le cirque " srcset=""></a>
+             <a> <img src="/public/img/Réunion/mafate-jeune-femme-contemplant-cirque.webp" alt="une jeune femme contemplant le cirque "></a>
                  <p> Une jeune femme contemplant le cirque </p>
            <h3> L’aspect saisissant de la nature </h3>
                <p> 
@@ -75,7 +108,7 @@
                   Cet aspect pourrait aussi se retrouver dans le tableau “Le voyageur contemplant une mer de nuage” 
                    de Caspar David Friedrich ou la figure solitaire du personnage admire l’immensité de la nature. 
               </p>
-              <a> <img src="/public/img/Réunion/tableau-caspard-david-friedrich.webp" alt="le voyageur contemplant mer de nuage" srcset=""></a>
+              <a> <img src="/public/img/Réunion/tableau-caspard-david-friedrich.webp" alt="le voyageur contemplant mer de nuage"></a>
                  <p> Le voyageur contemplant une mer de nuage” Tableau de Caspar David Friedrich </p>
                <p> 
                   Cela montrerait que notre propre personne n’est qu’une figure insignifiante face à l’immensité du monde 
@@ -97,6 +130,46 @@
          </h3>
         </main>
   </body>
+
+  <nav> 
+   <footer>
+   <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+        <a 
+          href="http://mmimontbeliard.com/">
+          <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi"> 
+       </a> 
+  
+       <a 
+         href="https://www.instagram.com/mmi_montbeliard/">
+         <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+       </a> 
+       <a
+         href="https://www.linkedin.com/school/mmimontbeliard/">
+         <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+      </a>
+
+      <a
+         href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+         <img src="/public/img/Icons/youtube.svg" alt="youtube"> 
+      </a>
+      
+     <a><img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow"> </a> 
+
+    <p> Jaël Amemoutou groupe A1 MMI</p>
+    <a href="mailto:jaelam302@gmail.com"> jaelam302@gmail.com </a> 
+      <a
+          href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+         <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
+      </a> 
+
+      <a 
+        href="https://www.instagram.com/jaja_9745/">
+        <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+      </a> 
+   </footer>
+ </nav>
+
+
 
 
 
