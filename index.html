@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIs0pen: false}  ">
  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=, initial-scale=1.0">
       <title>Sweet Old Times</title>
       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
-      <link rel="icon" href="public/img/Icons/clock (1).svg">
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
  </head>
 
  <header>
    <h1> Sweet Old Times </h1>
+   
      <a>
-       <img src="public/img/Icons/drapeau-francais.svg" alt="icone francais">
-       <img src="public/img/accueil/background.webp" alt= "background" >
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
+       <img src="/public/img/accueil/background.webp" alt= "background" >
      </a>
-    <img src="public/img/Icons/menu-burger.svg" alt="menu menu-burger">
-   <nav>   
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__menuBtn"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
+      <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.700ms class="menu">   
      <a> 
        <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
        <img src="/public/img/Icons/croix.svg" alt="croix">
-     </a> 
-
+    </a> 
          <h4> Articles </h4>
        <ul>
               <li> 
@@ -68,6 +68,7 @@
             </li>
         </ul>
    </nav>
+ </header>
  </header>
 
      <p>
