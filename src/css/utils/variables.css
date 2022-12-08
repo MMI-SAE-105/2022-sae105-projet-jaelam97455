@@ -1,0 +1,26 @@
+:root{
+    
+/* Color styles */
+--bleu-foncé: rgba(1, 9, 108, 1);
+--bleu-fond: rgba(2, 2, 46, 1);
+--noir: rgba(33, 36, 53, 1);
+--bleu-clair: rgba(144, 187, 209, 1);
+--bleu: rgba(29, 78, 216, 1);
+--blanc: rgba(255, 255, 255, 1);
+
+/* Text-size styles */
+/* base size: mobile--25px--viga (25px) */
+--mobile--25px--viga: 1rem;
+--mobile--16px--viga: 0.64rem;
+--mobile--14px--viga: 0.56rem;
+--mobile--14px--proza-libre: 0.56rem;
+--mobile--14px--josefin--sans: 0.56rem;
+--mobile--14px-bold--josefin--sans: 0.56rem;
+--mobile--14px-semibold--josefin--sans: 0.56rem;
+--mobile--14px-extralight--josefin--sans: 0.56rem;
+--mobile--14px-light--josefin--sans: 0.56rem;
+--mobile--16px-bold--josefin--sans: 0.64rem;
+--mobile--16px-semibold--josefin--sans: 0.64rem;
+--mobile--16px-bold-italic-josefin--sans: 0.68rem;
+
+}
