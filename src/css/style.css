@@ -11,3 +11,7 @@
 @import "base/main.css";
 @import "base/media.css";
 
+/* Composant */
+@import "components/menu.css";
+@import "components/hero.css";
+@import "components/chapo.css";
