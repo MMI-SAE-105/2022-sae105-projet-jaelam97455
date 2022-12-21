@@ -1,6 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     color: aliceblue;
     background-color: var(--bleu-fond);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
+}
+
+h1{
+    font-family: 'Viga';
+    color: var(--bleu-clair);
 }

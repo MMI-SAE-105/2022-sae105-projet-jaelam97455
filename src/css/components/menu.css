@@ -1,0 +1,29 @@
+/* Pour l'instant on cache le menu */
+.menu {
+    display: none;
+  }
+
+  /* Mise en forme du bouton de menu "Hamburger" */
+  .menu-btn {
+    background-color:var(--bleu);
+    width: 30px;
+    position: relative;
+  }
+  
+  .menu-btn__bar {
+    height: 2px;
+    width: 100%;
+    background-color: var(--bleu);
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+
+  }
