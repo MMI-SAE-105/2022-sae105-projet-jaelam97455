@@ -13,8 +13,17 @@ h1{
     font-family: 'Viga';
     color: var(--bleu-clair);
 }
+
 h5{
     font-family: 'Josefin Sans';
     font-size: var(--mobile--14px--josefin--sans);
 
+}
+h2,h3{
+    font-family: 'Josefin Sans';
+    font-size:var(--mobile--14px-semibold--josefin--sans);
+}
+p {
+    font-family: 'Proza Libre';
+    font-size: var(--mobile--14px--proza-libre);
 }
