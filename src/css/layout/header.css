@@ -1,8 +1,7 @@
 .header__homepage{
 display: flex;
-background-image: url(/public/img/accueil/background.webp);
+background-image: url('/public/img/accueil/background.webp');
 height: 244px;
-/* width: auto; */
 background-size: contain;
 
 }
