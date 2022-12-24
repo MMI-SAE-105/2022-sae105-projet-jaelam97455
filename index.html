@@ -11,13 +11,13 @@
 
  <header> 
    <div class="header__homepage">  
-    <img src="/public/img/accueil/background.webp" alt= "background"  class="header__img">
       <div class="header__btn"> 
-        <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="header__btn__language">
-        <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__btn__menu"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
+        <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="header__btn__language"> </a>
+
+        <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__btn__menu"> <a> <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
         <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
       </div>
-    </div>  
+    </div
     
       <nav class="menu">  
          <img src="/public/img/Icons/croix.svg" alt="croix">
