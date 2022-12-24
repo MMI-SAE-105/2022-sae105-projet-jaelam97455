@@ -9,16 +9,16 @@
       <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
  </head>
 
- <header>   
-     <a>
-       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-       <img src="/public/img/accueil/background.webp" alt= "background" >
-     </a>
-        
-     <a> 
-       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-       <img src="/public/img/Icons/croix.svg" alt="croix">
-    </a> 
+ <header> 
+   <div class="header__homepage">  
+       <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="header__btn__language">
+       <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="header__btn__menu"> <a>  <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger"></a> </button>
+       <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+        <img src="/public/img/accueil/background.webp" alt= "background"  class="header__hero__img">
+    </div>  
+    
+      <nav class="menu">  
+         <img src="/public/img/Icons/croix.svg" alt="croix">
          <h4> Articles </h4>
        <ul>
               <li> 
@@ -66,7 +66,7 @@
         </ul>
    </nav>
  </header>
- </header>
+
 
      <p>
        Le changement ponctue notre vie jusqu’à notre dernier souffle. Et pourtant il restera toujours difficile à appréhender dans certains cas.

@@ -1,0 +1,29 @@
+.header__homepage{
+position: absolute;
+display: flex;
+flex-direction: column;
+padding: 10px;
+gap: 10px;
+
+}
+
+.header__btn__language{
+width: 28px;
+height: 23px;
+left: 23px;
+top: 17px;
+}
+
+.header__btn__menu{
+width: 24px;
+height: 24px;
+left: 326px;
+top: 15px;
+
+}
+
+.header__hero__img{
+position: relative;
+z-index: 1;
+
+}
