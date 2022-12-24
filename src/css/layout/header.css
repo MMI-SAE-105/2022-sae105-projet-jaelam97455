@@ -15,6 +15,7 @@ gap: 10px;
     }
 
 .header__btn{
+    position: absolute;
     display: flex;
     justify-content: space-between;
 }
