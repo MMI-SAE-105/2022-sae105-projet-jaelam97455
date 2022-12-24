@@ -27,3 +27,12 @@ p {
     font-family: 'Proza Libre';
     font-size: var(--mobile--14px--proza-libre);
 }
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
