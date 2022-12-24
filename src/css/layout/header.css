@@ -1,9 +1,8 @@
 .header__homepage{
-display: flex;
-background-image: url('/public/img/accueil/background.webp');
-height: 244px;
-background-size: contain;
-
+    display: flex;
+    background-image: url('/public/img/accueil/background.webp');
+    height: 244px;
+    background-size: contain;
 }
 
 .header__img{
@@ -12,7 +11,6 @@ background-size: contain;
     }
 
 .header__btn{
-    position: absolute;
     justify-content: space-between;
     flex-direction: row-reverse;
 }

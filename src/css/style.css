@@ -15,3 +15,5 @@
 @import "components/menu.css";
 @import "components/hero.css";
 @import "components/chapo.css";
+
+@import"layout/header.css";
