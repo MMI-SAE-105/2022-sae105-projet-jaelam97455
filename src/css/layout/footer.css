@@ -1,4 +1,8 @@
 .footer_fr{
-    background-color: var(--bleu);
+    background-color: var(--bleu-foncé);
+    padding: 2px;
 
+}
+.legal__dptmmi{
+    display: flex;
 }
