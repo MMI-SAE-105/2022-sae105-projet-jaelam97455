@@ -1,29 +1,16 @@
 /* Pour l'instant on cache le menu */
 .menu {
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+ background-color:var(--bleu-foncé);
+ display: grid;
+ place-content: center;
   }
 
-  /* Mise en forme du bouton de menu "Hamburger" */
-  .menu-btn {
-    background-color:var(--bleu);
-    width: 30px;
-    position: relative;
-  }
-  
-  .menu-btn__bar {
-    height: 2px;
-    width: 100%;
-    background-color: var(--bleu);
-    display: block;
-    position: absolute;
-    left: 0;
-  }
-
-  menu-btn__bar::before {
-    top: -10px;
-  }
-  
-  .menu-btn__bar::after {
-    top: 10px;
-
-  }
+.header__menuBtn{
+  position: relative;
+  z-index: 10;
+}
