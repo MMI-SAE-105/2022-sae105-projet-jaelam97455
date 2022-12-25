@@ -1,16 +1,11 @@
-.header__homepage{
-    display: flex;
+.header__homepage_fr{
     background-image: url('/public/img/accueil/background.webp');
     height: 244px;
     background-size: contain;
 }
 
-.header__img{
-    width: 365px;
-    height: 244px;
-    }
-
 .header__btn{
+    display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
