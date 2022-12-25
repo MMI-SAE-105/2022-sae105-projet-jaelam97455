@@ -11,7 +11,20 @@
  place-content: center;
   }
 
-.header__menuBtn{
+.header__menuBtn ::before{
   position: relative;
   z-index: 10;
+}
+
+.header_menuBtn_after::after{
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
 }
