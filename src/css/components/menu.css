@@ -11,7 +11,8 @@
  place-content: center;
   }
 
-.header__menuBtn{
+.header__menuBtn {
   position: relative;
   z-index: 10;
 }
+
