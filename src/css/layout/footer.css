@@ -19,9 +19,12 @@
     justify-content: flex-start;
     margin: 5px;
 }
-
-.footer__btn--toparrow{
+.footer__separation{
     display: flex;
-    margin-left: auto;
+    border: 2px solid var(--noir);
+}
+}
+.footer__btn--toparrow{
+    margin: 10px;
 
 }
