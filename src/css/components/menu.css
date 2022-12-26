@@ -20,7 +20,7 @@
   font-family: 'Josefin Sans';
   color: var(--bleu-clair);
   margin: 17px;
-  font-size: var(--mobile--16px-bold--josefin--sans);
+  font-size: var(--mobile--20px-bold-italic-josefin--sans);
 
 }
 
@@ -32,11 +32,19 @@
 }
 
 .menu__link--article {
+  font-family: 'Josefin Sans';
+  font-size: 18px;
   color: var(--blanc);
   text-decoration: none;
+  margin: 10px;
+  padding: 10px;
 }
 
 .menu__link--info  {
+  font-family: 'Josefin Sans';
+  font-size: 18px;
   color: var(--blanc);
   text-decoration: none;
+  margin: 10px;
+  padding: 18px;
 }
