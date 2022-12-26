@@ -16,3 +16,13 @@
   z-index: 10;
 }
 
+.menu_title{
+  font-family: 'Josefin Sans';
+  color: var(--bleu-clair);
+  font-size: var(--mobile--16px-bold--josefin--sans);
+
+}
+
+.menu__link_articles{
+  list-style-type: none;
+}
