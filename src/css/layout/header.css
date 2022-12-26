@@ -1,23 +1,23 @@
-.header__homepage_fr{
+.headerhomepage--fr{
     background-image: url('/public/img/accueil/background.webp');
     height: 244px;
     background-size: contain;
 }
 
-.header__btn{
+.headerhomepage__btn{
     display: flex;
     margin: 10px;
     justify-content: space-between;
 }
 
-.header__btn__language{
+.headerhomepage__btn--FR{
 width: 24px;
 height: 23px;
 left: 23px;
 top: 0px;
 }
 
-.header__btn__menu{
+.headerhomepage__btn--menu{
 width: 24px;
 height: 23px;
 left: 23px;

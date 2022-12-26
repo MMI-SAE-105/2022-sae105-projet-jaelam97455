@@ -24,16 +24,17 @@
 
 }
 
-.menu__link_articles{
+.menu__nav--articles{
   list-style-type: none;
 }
-.menu__link_infos{
+.menu__nav--infos{
   list-style-type: none;
 }
 
-ul.menu__link_articles li{
+.menu__link_article {
   color: var(--blanc);
 }
-ul.menu__link_infos li {
+
+.menu__link_info li {
   color: var(--blanc);
 }
