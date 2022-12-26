@@ -16,6 +16,10 @@
   z-index: 10;
 }
 
+.menu__btn--FR{
+  display: flex;
+  margin-left: 15px;
+}
 .menu__title{
   font-family: 'Josefin Sans';
   font-weight: bold;
@@ -27,16 +31,17 @@
 
 .menu__nav--articles{
   list-style-type: none;
-  margin: 10px;
+  margin: 7px;
 }
 .menu__nav--infos{
   list-style-type: none;
+  margin: 7px;
 }
 .menu__liste--article{
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 .menu__liste--info{
-  margin: 20px 0px;
+  margin: 15px 0px;
 
 }
 
@@ -47,7 +52,6 @@
   text-decoration: none;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 5em;
 }
 
 .menu__link--info  {
