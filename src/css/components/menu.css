@@ -27,9 +27,17 @@
 
 .menu__nav--articles{
   list-style-type: none;
+  margin: 10px;
 }
 .menu__nav--infos{
   list-style-type: none;
+}
+.menu__liste--article{
+  margin: 20px 0px;
+}
+.menu__liste--info{
+  margin: 20px 0px;
+
 }
 
 .menu__link--article {
