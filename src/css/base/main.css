@@ -36,4 +36,9 @@ button {
     cursor: pointer;
   }
 
+footer > h4{
+font-family: 'Josefin Sans';
+font-weight: 200;
+font-size: 16px;
+}
  

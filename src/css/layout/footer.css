@@ -3,6 +3,13 @@
     padding: 2px;
 
 }
-.legal__dptmmi{
+.footer__legal--dptmmi{
     display: flex;
+    margin: 4px;
+}
+.footer__btn--dptmmi{
+    width: 50px;
+    height: auto;
+    margin: 20px;
+    margin-left: 0px;
 }
