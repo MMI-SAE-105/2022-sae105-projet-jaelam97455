@@ -16,7 +16,7 @@
   z-index: 10;
 }
 
-.menu_title{
+.menu__title{
   font-family: 'Josefin Sans';
   color: var(--bleu-clair);
   margin: 17px;
@@ -31,10 +31,12 @@
   list-style-type: none;
 }
 
-.menu__link_article {
+.menu__link--article {
   color: var(--blanc);
+  text-decoration: none;
 }
 
-.menu__link_info li {
+.menu__link--info  {
   color: var(--blanc);
+  text-decoration: none;
 }
