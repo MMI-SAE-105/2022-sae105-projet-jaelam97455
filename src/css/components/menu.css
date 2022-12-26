@@ -19,6 +19,7 @@
 .menu_title{
   font-family: 'Josefin Sans';
   color: var(--bleu-clair);
+  margin: 17px;
   font-size: var(--mobile--16px-bold--josefin--sans);
 
 }
@@ -26,6 +27,10 @@
 .menu__link_articles{
   list-style-type: none;
 }
-.menu__link_articles{
+.menu__link_infos{
   list-style-type: none;
+}
+
+.menu__link_articles > li{
+  color: var(--blanc);
 }
