@@ -5,11 +5,23 @@
 }
 .footer__legal--dptmmi{
     display: flex;
-    margin: 4px;
+    margin: 5px;
 }
 .footer__btn--dptmmi{
-    width: 50px;
+    width: 54px;
     height: auto;
     margin: 20px;
     margin-left: 0px;
+}
+
+.footer__linksocial--dptmmi{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.footer__btn--toparrow{
+    display: flex;
+    margin-left: auto;
+
 }
