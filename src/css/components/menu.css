@@ -31,6 +31,9 @@
   list-style-type: none;
 }
 
-.menu__link_articles > li{
+ul.menu__link_articles li{
+  color: var(--blanc);
+}
+ul.menu__link_infos li {
   color: var(--blanc);
 }
