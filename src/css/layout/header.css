@@ -26,3 +26,11 @@ margin-left: auto;
 padding:5px ;
 }
 
+.header__nav{
+    position: fixed;
+    background-color: var(--bleu-clair);
+}
+
+.header__nav--btn{
+    display: flex;
+}
