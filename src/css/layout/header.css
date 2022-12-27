@@ -28,9 +28,10 @@ padding:5px ;
 
 .header__nav{
     position: fixed;
-    background-color: var(--bleu-clair);
+    color: var(--bleu-foncé);
 }
 
 .header__nav--btn{
     display: flex;
+    justify-content: space-between;
 }
