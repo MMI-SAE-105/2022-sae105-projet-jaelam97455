@@ -13,8 +13,8 @@
 
 /* Composant */
 @import "components/menu.css";
-@import "components/hero.css";
-@import "components/chapo.css";
+@import "components/article.css";
+@import "components/galerie.css";
 
 @import"layout/header.css";
 @import"layout/footer.css";

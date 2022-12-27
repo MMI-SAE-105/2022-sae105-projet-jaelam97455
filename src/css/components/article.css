@@ -1,0 +1,9 @@
+.article__heading{
+    margin: 4px;
+}
+.article__heading--category{
+    font-size: 14px;
+}
+.article__heading--title{
+    text-align: center;
+}

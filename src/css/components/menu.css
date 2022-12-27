@@ -19,6 +19,7 @@
 .menu__btn--FR{
   display: flex;
   margin-left: 15px;
+  width: 34px;
 }
 .menu__title{
   font-family: 'Josefin Sans';
