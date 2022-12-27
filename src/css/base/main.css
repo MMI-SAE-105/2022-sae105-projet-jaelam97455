@@ -41,8 +41,13 @@ font-family: 'Josefin Sans';
 font-weight: 200;
 font-size: 16px;
 }
+
 .article__title--decoration{
-    text-decoration-line: underline overline;
-    color: var(--bleu-clair);
+    border: solid;
+    border-color: var(--bleu);
+    border-width: 5px 0px 5px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
  
