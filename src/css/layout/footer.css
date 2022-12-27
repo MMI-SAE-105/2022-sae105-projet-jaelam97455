@@ -16,15 +16,27 @@
 
 .footer__linksocial--dptmmi{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     margin: 5px;
 }
 .footer__separation{
     display: flex;
-    border: 2px solid var(--noir);
+    border: 2px solid var(--blanc);
+   border-left: none;
 }
-}
-.footer__btn--toparrow{
-    margin: 10px;
 
+.footer__btn--toparrow{
+    display: flex;
+    padding: 5px;
+    margin-left: 315px;
+}
+.footer__link--jael{
+    display: flex;
+}
+
+.footer__mailto--jael{
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+font-weight: 200;
+font-size: 16px;
 }
