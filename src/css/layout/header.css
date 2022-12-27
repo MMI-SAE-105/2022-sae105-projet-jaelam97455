@@ -18,7 +18,7 @@ top: 0px;
 }
 
 .headerhomepage__btn--menu{
-width: 24px;
+width: 34px;
 height: 23px;
 left: 23px;
 top: 0px;
@@ -28,10 +28,18 @@ padding:5px ;
 
 .header__nav{
     position: fixed;
-    color: var(--bleu-foncé);
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 7px;
+    background-color: var(--bleu-foncé);
 }
 
-.header__nav--btn{
+.header__nav--items{
     display: flex;
-    justify-content: space-between;
+    padding: 6px;
+    column-gap: 3rem;
+}
+.header__nav--arrowbefore{
+    margin: 7px;
 }
