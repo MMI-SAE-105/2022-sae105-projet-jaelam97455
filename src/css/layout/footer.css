@@ -39,9 +39,11 @@
     margin: 5px;;
 }
 .footer__mailto--jael{
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--blanc);
     font-family: 'Josefin Sans';
-font-weight: 200;
-font-size: 16px;
-text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 7px;
 }
