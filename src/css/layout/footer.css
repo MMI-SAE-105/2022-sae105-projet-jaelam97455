@@ -29,7 +29,13 @@
 .footer__link--jael{
     display: flex;
 }
-
+.footer__name--student{
+    text-align: center;
+}
+.footer__link--jael{
+    display: flex;
+    justify-content: space-around;
+}
 .footer__mailto--jael{
     text-decoration: none;
     font-family: 'Josefin Sans';
