@@ -9,6 +9,7 @@
 }
 .article__heading--title{
     text-align: center;
+    margin: 5px;
 }
 .article__heading--separation{
     border: 2px solid var(--blanc);
