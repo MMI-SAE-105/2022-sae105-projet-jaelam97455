@@ -1,9 +1,16 @@
 .article__heading{
+    padding-top: 40px;
     margin: 4px;
 }
 .article__heading--category{
-    font-size: 14px;
+   position: relative;
+   top: 16px;
+   margin: 12px;
 }
 .article__heading--title{
     text-align: center;
+}
+.article__heading--separation{
+    border: 2px solid var(--blanc);
+    border-width: 2px 0px 0px 0px;
 }

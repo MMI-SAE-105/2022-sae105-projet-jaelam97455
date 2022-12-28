@@ -16,7 +16,8 @@ h1{
 
 h5{
     font-family: 'Josefin Sans';
-    font-size: var(--mobile--14px--josefin--sans);
+    font-size: 19px;
+    font-weight: 400;
 
 }
 h2,h3{

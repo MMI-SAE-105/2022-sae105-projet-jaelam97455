@@ -1,5 +1,7 @@
 .galerie__film{
     display: grid;
     grid-template-columns: repeat(2 1fr);
-   gap: 5px;
+    grid-gap: 20px;
+    margin-inline: 20px;
+    text-align: center;
 }
