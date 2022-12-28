@@ -1,7 +1,21 @@
 .galerie__film{
     display: grid;
-    grid-template-columns: repeat(2 1fr);
     grid-gap: 20px;
     margin-inline: 20px;
     text-align: center;
+}
+.galerie__film--container{
+    display: table-column-group;
+    column-count: 2;
+    padding:4px ;
+    width: 323px;
+    column-gap: 30px;
+}
+
+.galerie_film--image{
+    width: 139px;
+    height: 182px;
+}
+.galerie__film--legende{
+    margin: 2px;
 }
