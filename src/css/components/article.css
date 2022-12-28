@@ -15,3 +15,12 @@
     border: 2px solid var(--blanc);
     border-width: 2px 0px 0px 0px;
 }
+
+.article__title--decoration{
+    border: solid;
+    border-color: var(--bleu);
+    border-width: 5px 0px 5px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

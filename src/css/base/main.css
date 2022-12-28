@@ -3,7 +3,7 @@
 }
 
 body{
-    color: aliceblue;
+    color: var(--blanc);
     background-color: var(--bleu-fond);
     background-attachment: fixed;
     background-repeat: no-repeat;  
@@ -44,12 +44,5 @@ font-weight: 200;
 font-size: 16px;
 }
 
-.article__title--decoration{
-    border: solid;
-    border-color: var(--bleu);
-    border-width: 5px 0px 5px 0px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
+
  
