@@ -11,10 +11,16 @@
 @import "base/main.css";
 @import "base/media.css";
 
+
+@import"layout/header.css";
+@import"layout/footer.css";
+
 /* Composant */
 @import "components/menu.css";
 @import "components/article.css";
 @import "components/galerie.css";
 
-@import"layout/header.css";
-@import"layout/footer.css";
+
+
+
+

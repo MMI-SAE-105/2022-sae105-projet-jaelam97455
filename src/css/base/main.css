@@ -7,6 +7,7 @@ body{
     background-color: var(--bleu-fond);
     background-attachment: fixed;
     background-repeat: no-repeat;  
+    overflow-x: none;
 }
 
 h1{
