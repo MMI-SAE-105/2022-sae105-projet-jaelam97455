@@ -24,11 +24,11 @@ h5{
 }
 h2,h3{
     font-family: 'Josefin Sans';
-    font-size:var(--mobile--16px-semibold--josefin--sans);
+    font-size: 16px;
 }
 p {
     font-family: 'Proza Libre';
-    font-size: var(--mobile--14px--proza-libre);
+    font-size: 14px;
 }
 
 button {

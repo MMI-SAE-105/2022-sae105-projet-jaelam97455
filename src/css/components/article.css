@@ -32,6 +32,9 @@
 .article__quote--lyrics{
     background-color: var(--bleu-foncé);
     padding: 12px;
+    margin: 3px;
+    margin-bottom: 10px;
     text-align: center;
     border-radius: 20px;
+    font-size: 12px;
 }
