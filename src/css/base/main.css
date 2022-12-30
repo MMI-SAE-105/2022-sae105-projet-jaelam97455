@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    overflow-x: none;
+
 }
 
 body{
@@ -7,7 +9,6 @@ body{
     background-color: var(--bleu-fond);
     background-attachment: fixed;
     background-repeat: no-repeat;  
-    overflow-x: none;
 }
 
 h1{
@@ -25,6 +26,7 @@ h5{
 h2,h3{
     font-family: 'Josefin Sans';
     font-size: 16px;
+    color: var(--bleu-clair);
 }
 p {
     font-family: 'Proza Libre';
