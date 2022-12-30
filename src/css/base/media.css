@@ -2,3 +2,8 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+  .accueil__article--visual{
+    width: 183px;
+    height: 144px;
+  }

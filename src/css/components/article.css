@@ -44,3 +44,7 @@
     flex-direction: row-reverse;
     margin: 15px;
 }
+
+.accueil__article--caption{
+    padding-left: 12px;
+}
