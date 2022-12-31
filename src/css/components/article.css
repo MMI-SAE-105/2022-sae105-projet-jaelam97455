@@ -32,19 +32,26 @@
 
 .article__quote--lyrics{
     background-color: var(--bleu-foncé);
-    padding: 10 px;
+    padding: 4px;
     margin: 3px;
-    margin-bottom: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
     text-align: center;
     border-radius: 20px;
-    font-size: 12px;
+
 }
-.accueil__article--link{
+.article__presentation--rowreverse{
     display: flex;
     flex-direction: row-reverse;
     margin: 15px;
 }
 
-.accueil__article--caption{
+.article__presentation--row{
+    display: flex;
+    flex-direction:row;
+    margin: 15px;
+}
+
+.article__presentation--caption{
     padding-left: 12px;
 }
