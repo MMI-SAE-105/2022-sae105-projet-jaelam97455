@@ -5,13 +5,16 @@
 }
 .footer__legal--dptmmi{
     display: flex;
-    margin: 5px;
+    position: relative;
+    left: 5px;
+    margin: 6px;
 }
 .footer__btn--dptmmi{
     width: 54px;
     height: auto;
-    margin: 20px;
-    margin-left: 0px;
+  position: relative;
+  top: 15px;
+  right: 15px;
 }
 
 .footer__linksocial--dptmmi{
