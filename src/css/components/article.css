@@ -15,6 +15,9 @@
     border: 2px solid var(--blanc);
     border-width: 2px 0px 0px 0px;
     padding-bottom: 7px;
+    position: relative;
+    width: 309px;
+    left: 26px;
 }
 
 .article__title--decoration{
