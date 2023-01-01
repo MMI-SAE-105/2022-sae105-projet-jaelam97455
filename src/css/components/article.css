@@ -3,21 +3,28 @@
     margin: 4px;
 }
 .article__heading--category{
-   position: relative;
-   top: 16px;
    margin: 12px;
 }
 .article__heading--title{
     text-align: center;
     margin: 5px;
 }
+
+  
+
+.article__heading--subtittle{
+text-align: center;
+}
+
+
+
+
 .article__heading--separation{
     border: 2px solid var(--blanc);
     border-width: 2px 0px 0px 0px;
     padding-bottom: 7px;
-    position: relative;
     width: 309px;
-    left: 26px;
+    margin-inline: auto;
 }
 
 .article__title--decoration{
