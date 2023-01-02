@@ -105,7 +105,42 @@
 
             <p class="article__text">Pendant cette période charnière ou des liens se tissent, nos lycéens doivent aussi se positionner par rapport à leur avenir et à leurs études supérieures.</p>
             <p class="article__text"> Et cela peut s’avérer être un dilemme pour certains.Notamment Futaba .</p> 
-             <p> carousel</p>
+
+            <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+        
+               <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+               <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+       
+               <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+               [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+                
+                   <div id="ecran-1" class="carrousel_ecran">
+                       <figure>
+                           <img src="/public/img/Blue-flag/planche-futaba-01.webp" alt="planche-futaba-01">
+                           <figcaption>Ecran 1</figcaption>
+                       </figure>
+                   </div>
+                   <div id="ecran-2" class="carrousel_ecran">
+                       <figure>
+                           <img src="/public/img/Blue-flag/planche-futaba-02.webp" alt="planche-futaba-02">
+                           <figcaption>Ecran 2</figcaption>
+                       </figure>
+                   </div>
+                   <div id="ecran-3" class="carrousel_ecran">
+                       <figure>
+                           <img src="/public/img/Blue-flag/planche-futaba-03.webp" alt="planche-futaba-03">
+                           <figcaption>Ecran 3</figcaption>
+                       </figure>
+                   </div>
+               </div>
+       
+               <ul class="caroussel_liste-liens">
+                   <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
+                   <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
+                   <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
+               </ul>
+           </div> 
+
         <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
 
             <p class="article__text">   
