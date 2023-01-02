@@ -63,6 +63,7 @@ color: var(--blanc);
 
 .article__presentation--caption{
     padding-left: 12px;
+    margin-right: 10px;
 }
 
 .article__presentation--excerpt{
