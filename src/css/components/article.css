@@ -12,8 +12,10 @@
 
   
 .article__heading--subtittle{
-text-align: center;
+text-align: left;
 color: var(--blanc);
+margin: 4px;
+margin-left: 2rem;
 }
 
 .article__heading--separation{
@@ -88,4 +90,13 @@ color: var(--blanc);
     border-radius: 5px;
     font-size: 13px;
 
+}
+
+.main__article{
+    margin: 15%;
+
+}
+.article__text{
+    margin: 15px;
+    line-height: 5px;
 }
