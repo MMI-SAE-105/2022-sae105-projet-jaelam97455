@@ -7,16 +7,10 @@ img {
 
   }
 
-  .article__img{
-    width: 70%;
-    margin-inline: auto;
-  }
-  .article__figure--img{
-    margin: 20px;
-
-  }
+  
 .article__figure--legend{
   margin-bottom: 5px;
-
+  font-family: 'Proza Libre';
+  color: var(--bleu-clair);
 }
   

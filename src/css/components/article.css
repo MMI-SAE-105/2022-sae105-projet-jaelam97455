@@ -16,6 +16,7 @@ text-align: left;
 color: var(--blanc);
 margin: 4px;
 margin-left: 2rem;
+margin-bottom: 2rem;
 }
 
 .article__heading--separation{
@@ -31,9 +32,8 @@ margin-left: 2rem;
     border-color: var(--bleu);
     border-width: 5px 0px 5px 0px;
     font-size: 18px;
-    font-weight: bold;
     text-align: center;
-    width: 183px;
+    width: 283px;
     margin-inline: auto;
     color: var(--blanc);
 }
@@ -93,10 +93,8 @@ margin-left: 2rem;
 }
 
 .main__article{
-    margin: 15%;
-
+    margin: 5%;
 }
 .article__text{
-    margin: 15px;
-    line-height: 5px;
+    margin: 5px;
 }
