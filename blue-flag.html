@@ -1,73 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIs0pen: false}">
  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=, initial-scale=1.0">
       <title>Sweet Old Times</title>
       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script defer src="https://unpkg.com/alpinejs"></script>
  </head>
 
- <header>
-   <h1> Sweet Old Times </h1>
-     <a>
-       <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour">
-       <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" >
-     </a>
-    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
-   <nav>   
-        <a> 
-          <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-          <img src="/public/img/Icons/croix.svg" alt="croix">
-        </a> 
+  <header class="header__nav">
+   <div class="header__nav--items">
+      <a href="javascript:history.go(-1)"> <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour" class="header__nav--arrowbefore"> </a>
+      <a href="index.html"> <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" > </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+        <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+     </button>
+   </div>
+   <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+    <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
 
-         <h4> Articles </h4>
-       <ul>
-              <li> 
-                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
-              </li> 
-              <li>
-                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html"> Stressed out - Twenty One Pilots </a> 
-              </li>
+     <h4 class="menu__title"> Articles </h4>
+       <ul class="menu__nav--articles">
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+          </li> 
+          <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
 
-              <li>
-                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html">Blue Flag - Kaito </a>
-             </li> 
-              
-              <li> 
-                <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html">Le Voyage de Chihiro - Hayao Miyazaki </a>
-              </li>
+           <li class="menu__liste--article">
+             <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+           </li> 
+          
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+          </li>
 
-              <li>
-                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
-              </li>
-              <li> 
-                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
-              </li>
+          <li class="menu__liste--article">
+             <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+          </li>
 
-              <li> 
-                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
-              </li>
-       </ul> 
-         <h4> Informations complémentaires </h4>
-        <ul>
-            <li> 
-              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
-            </li>
-            
-            <li> 
-              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
-            </li>
-              
-            <li> 
-              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
-            </li>
-            <li> 
-              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
-            </li>
-        </ul>
-   </nav>
- </header>
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+          </li>
+
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+          </li>
+      </ul> 
+
+     <h4 class="menu__title"> Informations complémentaires </h4>
+
+       <ul class="menu__nav--infos">
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+           </li>
+
+           <li class="menu__liste--infos"> 
+           <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+          </li>
+      </ul>
+  </nav>  
+  </header>
  
  <main>   
    <div class="article__heading"> 
@@ -78,7 +80,8 @@
    </div>
  
 
-    <h3> Synopsis</h3>
+    <h3 class="article__title--decoration"> Synopsis</h3>
+
       <p>Le manga suit l’évolution de plusieurs personnages au lycée notamment Taichi Toma Futaba et Masumi </p>
       <img src="/public/img/Blue-flag/blue-flag-tome-1.webp" alt="premier tome Blue Flag">
       <p> Illustration du premier tome de Blue Flag </p>
@@ -96,13 +99,13 @@
         
          Notamment l’homosexualité, l’égalité des genres ,les relations humaines,ou encore le flou face à l’avenir.
       </p>
-   <h3> La terminale ou l’année tournée vers l’avenir </h3>
+   <h3 class="article__title--decoration"> La terminale ou l’année tournée vers l’avenir </h3>
      <p>  
        Pendant cette période charnière ou des liens se tissent, nos lycéens doivent aussi se positionner par rapport à leur avenir et à leurs études supérieures.
        Et cela peut s’avérer être un dilemme pour certains.Notamment Futaba .
      </p>
       <p> carousel</p>
-   <h3> Planche sur l’avenir de Futaba </h3>
+   <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
       <p>   
          Elle a commencé à sortir avec Taichi et ils souhaiteraient aller dans la même faculté.
          Cependant ,il y a aussi sa meilleure amie, Masumi avec qui elle souhaiterait être.
@@ -113,7 +116,7 @@
          
          Faut-il suivre les choix des autres ou faire ses propres choix quitte à être à l’écart ?
       </p>
-   <h3> Un avenir flou pour Toma </h3>
+   <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
       <p> carrousel</p>
       <p> 
          Toma est aussi indécis sur son futur.Taichi lui demande qu’est qu’il ferait si il ne prenait pas en compte ses proches (Seiya et Aki).
@@ -121,7 +124,7 @@
 
          En parlant avec Masumi, ce dernier explique qu’il ne sait pas quelle personne il souhaiterait devenir et quel avenir il aspire malgré ses proches l’encourageant à continuer les études.
       </p>
-  <h3> Le bonheur et son sens complexe </h3>
+  <h3 class="article__title--decoration"> Le bonheur et son sens complexe </h3>
       <p> 
          Plusieurs aspects des relations humaines sont aussi évoqués. Notamment avec l’homosexualité. 
          Le sentiment de ne pas être dans la norme est évoqué avec Masumi et la belle-mère de Toma.
@@ -133,7 +136,7 @@
          Cependant seront-il vraiment épanouis en cachant leurs différences ?Masumi évoque son point de vue sur cela. Ce qui met en avant plusieurs réflexions sur la place que nous occupons en société. 
          Notamment être heureux et paraître heureux aux yeux des autres.
       </p>
-   <h3> Une œuvre étonnamment marquante   </h3>
+   <h3 class="article__title--decoration"> Une œuvre étonnamment marquante   </h3>
        <img src="/public/img/Blue-flag/blue-flag-adolescents-grillage.webp" alt="adolescents devant un grillage ">
        <p>les 4 adolescents regardant à travers un grillage </p>
        <p>

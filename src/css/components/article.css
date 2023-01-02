@@ -11,13 +11,10 @@
 }
 
   
-
 .article__heading--subtittle{
 text-align: center;
+color: var(--blanc);
 }
-
-
-
 
 .article__heading--separation{
     border: 2px solid var(--blanc);
@@ -64,4 +61,21 @@ text-align: center;
 
 .article__presentation--caption{
     padding-left: 12px;
+}
+
+.article__presentation--excerpt{
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.article__presentation--btn{
+    background-color: var(--bleu);
+    color: var(--blanc);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+
 }
