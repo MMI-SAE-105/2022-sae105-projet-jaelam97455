@@ -61,6 +61,11 @@ color: var(--blanc);
     margin: 15px;
 }
 
+.article__presentation--visual{
+    padding-top: 15px;
+    margin: 3px;
+}
+
 .article__presentation--caption{
     padding-left: 12px;
     margin-right: 10px;
@@ -70,6 +75,7 @@ color: var(--blanc);
     font-family: 'Josefin Sans';
     font-size: 14px;
     font-weight: 300;
+    width: 150px;
 
 }
 
