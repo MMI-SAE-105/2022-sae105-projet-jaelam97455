@@ -33,6 +33,7 @@ color: var(--blanc);
     text-align: center;
     width: 183px;
     margin-inline: auto;
+    color: var(--blanc);
 }
 .accueil__text--intro{
     margin: 20px;
