@@ -106,44 +106,46 @@
 
             <p class="article__text">Pendant cette période charnière ou des liens se tissent, nos lycéens doivent aussi se positionner par rapport à leur avenir et à leurs études supérieures.</p>
             <p class="article__text"> Et cela peut s’avérer être un dilemme pour certains.Notamment Futaba .</p> 
+        <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
 
             <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
         
-               <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-               <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
-       
-               <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
-               [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
-                
-                   <div id="ecran-1" class="carrousel_ecran">
-                       <figure>
-                           <img src="/public/img/Blue-flag/planche-futaba-01.webp" alt="planche-futaba-01">
-                           <figcaption>Ecran 1</figcaption>
-                       </figure>
-                   </div>
-                   <div id="ecran-2" class="carrousel_ecran">
-                       <figure>
-                           <img src="/public/img/Blue-flag/planche-futaba-02.webp" alt="planche-futaba-02">
-                           <figcaption>Ecran 2</figcaption>
-                       </figure>
-                   </div>
-                   <div id="ecran-3" class="carrousel_ecran">
-                       <figure>
-                           <img src="/public/img/Blue-flag/planche-futaba-03.webp" alt="planche-futaba-03">
-                           <figcaption>Ecran 3</figcaption>
-                       </figure>
-                   </div>
-               </div>
-       
-               <ul class="caroussel_liste-liens">
-                   <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
-                   <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
-                   <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
-               </ul>
-           </div> 
-
-        <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
-
+         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+         <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+ 
+         <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+         [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+          
+             <div id="ecran-1" class="carrousel_ecran">
+                 <figure>
+                     <img src="/public/img/Blue-flag/planche-futaba-01.webp" alt="planche-futaba-01">
+                     <figcaption>Ecran 1</figcaption>
+                 </figure>
+             </div>
+             <div id="ecran-2" class="carrousel_ecran">
+                 <figure>
+                     <img src="/public/img/Blue-flag/planche-futaba-02.webp" alt="planche-futaba-02">
+                     <figcaption>Ecran 2</figcaption>
+                 </figure>
+             </div>
+             <div id="ecran-3" class="carrousel_ecran">
+                 <figure>
+                     <img src="/public/img/Blue-flag/planche-futaba-03.webp" alt="planche-futaba-03">
+                     <figcaption>Ecran 3</figcaption>
+                 </figure>
+             </div>
+         </div>
+ 
+             <ul class="caroussel__links--dots">
+                 <li><a href="#ecran-1" :class=></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
+                  <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
+                  <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
+             </ul>
+          </div> 
+           
             <p class="article__text">   
                Elle a commencé à sortir avec Taichi et ils souhaiteraient aller dans la même faculté.
                Cependant ,il y a aussi sa meilleure amie, Masumi avec qui elle souhaiterait être.
@@ -158,7 +160,7 @@
             Faut-il suivre les choix des autres ou faire ses propres choix quitte à être à l’écart ?
            </p>
    
-         <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
+       <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
           <p> carrousel</p>
            <p class="article__text"> 
          Toma est aussi indécis sur son futur.Taichi lui demande qu’est qu’il ferait si il ne prenait pas en compte ses proches (Seiya et Aki).
