@@ -51,20 +51,20 @@
 
     .caroussel__links--dots {
       display: flex;/* aligne horizontalement les enfants */
-      text-align: center; /* centre horizontalement les enfants */
-      margin: 0; /* enlève les marges par défaut */
       padding: 0; /* enlève les padding par défaut */
       list-style: none; /* enlève les puces par défaut */
-      justify-content: space-between; /* espace entre les enfants */
-      margin-inline: 10px;
-      text-decoration: none;
+      justify-content: center; /* espace entre les enfants */
+      margin-inline: auto;
     }
     .carrousel__link--dot{
       height: 10px;
       width: 10px;
-      background-color: var(--bleu-fond);
-      border: 1px solid var(--bleu-clair);
+      background-color: var(--blanc);
+      border: 2px solid var(--bleu-clair);
       border-radius: 50%;
       display: inline-block;
+    }
+    .carrousel__link--dot.dotactif{
+      background-color: var(--bleu);
 
     }
