@@ -114,7 +114,7 @@
                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
  
                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
-         [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+               [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
           
              <div id="ecran-1" class="carrousel_ecran">
                  <figure>
@@ -159,28 +159,27 @@
             Ainsi beaucoup de contraintes sociales accompagnent ces choix. 
             Faut-il suivre les choix des autres ou faire ses propres choix quitte à être à l’écart ?
            </p>
-   
-       <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
-       <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
-        
-         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-         <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+        <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
 
-         <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
-   [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+       <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+          <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+          <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+
+             <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+             [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
     
-       <div id="ecran-1" class="carrousel_ecran">
+            <div id="ecran-1" class="carrousel_ecran">
            <figure>
                <img src="/public/img/Blue-flag/planche-toma-taichi-01.webp" alt="planche-toma-taichi-01">
                <figcaption>Ecran 1</figcaption>
            </figure>
-       </div>
-       <div id="ecran-2" class="carrousel_ecran">
+            </div>
+          <div id="ecran-2" class="carrousel_ecran">
            <figure>
                <img src="/public/img/Blue-flag/planche-toma-taichi-02.webp" alt="planche-toma-taichi-02">
                <figcaption>Ecran 2</figcaption>
            </figure>
-       </div>
+         </div>
        <div id="ecran-3" class="carrousel_ecran">
            <figure>
                <img src="/public/img/Blue-flag/planche-toma-taichi-03.webp" alt="planche-futaba-03">
@@ -193,7 +192,7 @@
              <figcaption>Ecran 4</figcaption>
          </figure>
      </div>
-          </div>
+            </div>
 
        <ul class="caroussel__links--dots">
            <li><a href="#ecran-1" :class=></a></li>
@@ -215,11 +214,90 @@
 
         <h3 class="article__title--decoration"> Le bonheur et son sens complexe </h3>
             <p class="article__text"> 
-         Plusieurs aspects des relations humaines sont aussi évoqués. Notamment avec l’homosexualité. 
-         Le sentiment de ne pas être dans la norme est évoqué avec Masumi et la belle-mère de Toma.
-             </p>
-            <p> carrousek</p>
+               Plusieurs aspects des relations humaines sont aussi évoqués. Notamment avec l’homosexualité. 
+               Le sentiment de ne pas être dans la norme est évoqué avec Masumi et la belle-mère de Toma.
+            </p>
+           <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
+               <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+               <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
+      
+             <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                  [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
+          
+                  <div id="ecran-1" class="carrousel_ecran">
+                      <figure>
+                     <img src="/public/img/Blue-flag/planche-masumi-seiya-01.webp" alt="planche-masumi-seiya-01">
+                     <figcaption>Ecran 1</figcaption>
+                     </figure>
+                  </div>
 
+                   <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                           <img src="/public/img/Blue-flag/planche-masumi-seiya-02.webp" alt="planche-masumi-seiya-02">
+                           <figcaption>Ecran 2</figcaption>
+                        </figure>
+                   </div>
+                  <div id="ecran-3" class="carrousel_ecran">
+                      <figure>
+                        <img src="/public/img/Blue-flag/planche-masumi-seiya-03.webp" alt="planche-masumi-seiya-03">
+                        <figcaption>Ecran 3</figcaption>
+                     </figure>
+                  </div>
+                  <div id="ecran-4" class="carrousel_ecran">
+                      <figure>
+                        <img src="/public/img/Blue-flag/planche-masumi-seiya-04.webp" alt="planche-masumi-seiya-04">
+                        <figcaption>Ecran 4</figcaption>
+                      </figure>
+                  </div>
+                  <div id="ecran-5" class="carrousel_ecran">
+                     <figure>
+                       <img src="/public/img/Blue-flag/planche-masumi-seiya-05.webp" alt="planche-masumi-seiya-05">
+                       <figcaption>Ecran 4</figcaption>
+                     </figure>
+                 </div>
+                 <div id="ecran-6" class="carrousel_ecran">
+                     <figure>
+                        <img src="/public/img/Blue-flag/planche-masumi-seiya-06.webp" alt="planche-masumi-seiya-06">
+                        <figcaption>Ecran 4</figcaption>
+                     </figure>
+               </div>
+               <div id="ecran-7" class="carrousel_ecran">
+                  <figure>
+                    <img src="/public/img/Blue-flag/planche-masumi-seiya-07.webp" alt="planche-masumi-seiya-07">
+                    <figcaption>Ecran 4</figcaption>
+                  </figure>
+              </div>
+              <div id="ecran-8" class="carrousel_ecran">
+                   <figure>
+                      <img src="/public/img/Blue-flag/planche-masumi-seiya-08.webp" alt="planche-masumi-seiya-08">
+                     <figcaption>Ecran 4</figcaption>
+                   </figure>
+               </div>
+            </div>
+      
+             <ul class="caroussel__links--dots">
+                 <li><a href="#ecran-1" :class=></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
+                  <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
+
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
+                  <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
+                  
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
+                  <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+                  <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+                  <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+                  <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+                  <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+
+             </ul>
+          </div> 
+            
              <p class="article__text">  
              Ce passage montre que Toma et Masumi ne seraient pas aussi heureux qu’il le montrerai à leurs proches.
             </p>
@@ -240,7 +318,7 @@
           <p class="article__text"> Les sujets abordés par les protagonistes permettent une réflexion accrue sur ce que nous pensons de notre avenir, de nos relations ou encore de nous-même.</p>
          </p>
          
-    </div>
+                  </div>
  </main>
 
      <footer>
