@@ -109,7 +109,7 @@
         <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
 
             <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
-              
+
                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
                [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
           
@@ -359,45 +359,56 @@
           <p class="article__text"> On peut se retrouver facilement dans les préoccupations des lycéens de Blue Flag. Surtout lorsque l’on lit le manga en étant aussi en Terminale.</p>
 
           <p class="article__text"> Les sujets abordés par les protagonistes permettent une réflexion accrue sur ce que nous pensons de notre avenir, de nos relations ou encore de nous-même.</p>
-         </p>
-         
-                  </div>
+         </p>     
+    </div>
+    <div class="tothetop">
+      <a href="#top"> 
+        <img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow-up-circle">
+      </a> 
+    </div>
+
  </main>
 
-     <footer>
-      <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
-          <a 
-            href="http://mmimontbeliard.com/">
-            <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi"> 
-         </a> 
-    
-          <a 
-             href="https://www.instagram.com/mmi_montbeliard/">
-            <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
-         </a> 
-       <a
-          href="https://www.linkedin.com/school/mmimontbeliard/">
-         <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
-       </a>
-  
-        <a
-           href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
-           <img src="/public/img/Icons/youtube.svg" alt="youtube"> 
-        </a>
-        
-       <a><img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow"> </a> 
-  
-      <p> Jaël Amemoutou groupe A1 MMI</p>
-      <a href="mailto:jaelam302@gmail.com"> jaelam302@gmail.com </a> 
-        <a
-            href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+ <nav> 
+  <footer class="footer_fr">
+   <div class="footer__legal--dptmmi"> 
+     <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+       <a href="http://mmimontbeliard.com/">
+          <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi" class="footer__btn--dptmmi"> 
+       </a> 
+  </div>
+   <div class="footer__linksocial--dptmmi">        
+      <a 
+        href="https://www.instagram.com/mmi_montbeliard/">
+        <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+      </a> 
+      <a
+        href="https://www.linkedin.com/school/mmimontbeliard/">
+        <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+     </a>
+
+     <a
+        href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+        <img src="/public/img/Icons/youtube.svg" alt="youtube">          
+     </a>
+  </div> 
+  <div class="footer__separation"> 
+ </div>
+
+    <h4 class="footer__name--student"> Jaël Amemoutou groupe A1 MMI</h4>
+    <a href="mailto:jaelam302@gmail.com" class="footer__mailto--jael"> jaelam302@gmail.com </a> 
+
+   <div class="footer__social--jael">  
+     <div class="footer__link--jael">
+         <a href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
            <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
         </a> 
-        <a 
-          href="https://www.instagram.com/jaja_9745/">
-          <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+        <a href="https://www.instagram.com/jaja_9745/">
+           <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
         </a> 
-     </footer>  
+   </div>
+  </footer>
+</nav>
 </html>   
 
 
