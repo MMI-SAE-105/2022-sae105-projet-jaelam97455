@@ -36,6 +36,7 @@ margin-bottom: 2rem;
     width: 283px;
     margin-inline: auto;
     color: var(--blanc);
+    margin-bottom: 2rem;
 }
 .accueil__text--intro{
     margin: 20px;
