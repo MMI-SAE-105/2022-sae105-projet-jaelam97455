@@ -109,10 +109,7 @@
         <h3 class="article__title--decoration"> Planche sur l’avenir de Futaba </h3>
 
             <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
-        
-               <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-               <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
- 
+              
                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
                [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
           
@@ -137,12 +134,22 @@
                 </div>
  
              <ul class="caroussel__links--dots">
-                 <li><a href="#ecran-1" :class= "{actif:hrefCourant==='#ecran-1'}"></a></li>
-                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
-                  <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
-                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
-                  <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
-                  <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
+                 <li>
+                  <a href="#ecran-1" :class= "{actif:hrefCourant==='#ecran-1'}">
+                    <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
+                  </a>
+                </li>
+
+                  <li>
+                    <a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}">
+                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}">
+                     <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
+                    </a>
+                  </li>
              </ul>
           </div> 
            
@@ -162,47 +169,58 @@
         <h3 class="article__title--decoration"> Un avenir flou pour Toma </h3>
 
        <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
-          <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-          <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
-
-             <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+         
+         <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
              [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
     
-            <div id="ecran-1" class="carrousel_ecran">
-           <figure>
-               <img src="/public/img/Blue-flag/planche-toma-taichi-01.webp" alt="planche-toma-taichi-01">
-               <figcaption>Ecran 1</figcaption>
-           </figure>
+              <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                  <img src="/public/img/Blue-flag/planche-toma-taichi-01.webp" alt="planche-toma-taichi-01">
+                  <figcaption>Ecran 1</figcaption>
+                </figure>
             </div>
-          <div id="ecran-2" class="carrousel_ecran">
-           <figure>
-               <img src="/public/img/Blue-flag/planche-toma-taichi-02.webp" alt="planche-toma-taichi-02">
-               <figcaption>Ecran 2</figcaption>
-           </figure>
-         </div>
-       <div id="ecran-3" class="carrousel_ecran">
-           <figure>
-               <img src="/public/img/Blue-flag/planche-toma-taichi-03.webp" alt="planche-futaba-03">
-               <figcaption>Ecran 3</figcaption>
-           </figure>
-       </div>
-       <div id="ecran-4" class="carrousel_ecran">
-         <figure>
-             <img src="/public/img/Blue-flag/planche-toma-taichi-04.webp" alt="planche-futaba-04">
-             <figcaption>Ecran 4</figcaption>
-         </figure>
-     </div>
+            <div id="ecran-5" class="carrousel_ecran">
+              <figure>
+                  <img src="/public/img/Blue-flag/planche-toma-taichi-02.webp" alt="planche-toma-taichi-02">
+                  <figcaption>Ecran 2</figcaption>
+              </figure>
+             </div>
+             <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                  <img src="/public/img/Blue-flag/planche-toma-taichi-03.webp" alt="planche-futaba-03">
+                  <figcaption>Ecran 3</figcaption>
+               </figure>
+             </div>
+             <div id="ecran-7" class="carrousel_ecran">
+               <figure>
+                 <img src="/public/img/Blue-flag/planche-toma-taichi-04.webp" alt="planche-futaba-04">
+                  <figcaption>Ecran 4</figcaption>
+                </figure>
             </div>
+        </div>
 
        <ul class="caroussel__links--dots">
-           <li><a href="#ecran-1" :class= "{actif:hrefCourant==='#ecran-1'}"></a></li>
-            <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
-            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
-            <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
-            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
-            <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
-            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
-            <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+           <li>
+            <a href="#ecran-4" :class= "{actif:hrefCourant==='#ecran-4'}">
+              <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+            </a>
+          </li>
+          
+            <li>
+              <a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}">
+                <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-5'}"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}">
+                <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-6'}"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}">
+                <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-7'}"></span>
+              </a>
+            </li>
        </ul>
     </div> 
 
@@ -218,56 +236,54 @@
                Le sentiment de ne pas être dans la norme est évoqué avec Masumi et la belle-mère de Toma.
             </p>
            <div class="carrousel" x-data="{ hrefCourant: '#ecran-1',}">
-               <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
-               <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
       
              <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
                   [...$refs.parent.children] .find(e=>e.getBoundingClientRect().x>=0).id ">
           
-                  <div id="ecran-1" class="carrousel_ecran">
+                  <div id="ecran-8" class="carrousel_ecran">
                       <figure>
                      <img src="/public/img/Blue-flag/planche-masumi-seiya-01.webp" alt="planche-masumi-seiya-01">
                      <figcaption>Ecran 1</figcaption>
                      </figure>
                   </div>
 
-                   <div id="ecran-2" class="carrousel_ecran">
+                   <div id="ecran-9" class="carrousel_ecran">
                         <figure>
                            <img src="/public/img/Blue-flag/planche-masumi-seiya-02.webp" alt="planche-masumi-seiya-02">
                            <figcaption>Ecran 2</figcaption>
                         </figure>
                    </div>
-                  <div id="ecran-3" class="carrousel_ecran">
+                  <div id="ecran-10" class="carrousel_ecran">
                       <figure>
                         <img src="/public/img/Blue-flag/planche-masumi-seiya-03.webp" alt="planche-masumi-seiya-03">
                         <figcaption>Ecran 3</figcaption>
                      </figure>
                   </div>
-                  <div id="ecran-4" class="carrousel_ecran">
+                  <div id="ecran-11" class="carrousel_ecran">
                       <figure>
                         <img src="/public/img/Blue-flag/planche-masumi-seiya-04.webp" alt="planche-masumi-seiya-04">
                         <figcaption>Ecran 4</figcaption>
                       </figure>
                   </div>
-                  <div id="ecran-5" class="carrousel_ecran">
+                  <div id="ecran-12" class="carrousel_ecran">
                      <figure>
                        <img src="/public/img/Blue-flag/planche-masumi-seiya-05.webp" alt="planche-masumi-seiya-05">
                        <figcaption>Ecran 4</figcaption>
                      </figure>
                  </div>
-                 <div id="ecran-6" class="carrousel_ecran">
+                 <div id="ecran-13" class="carrousel_ecran">
                      <figure>
                         <img src="/public/img/Blue-flag/planche-masumi-seiya-06.webp" alt="planche-masumi-seiya-06">
                         <figcaption>Ecran 4</figcaption>
                      </figure>
                </div>
-               <div id="ecran-7" class="carrousel_ecran">
+               <div id="ecran-14" class="carrousel_ecran">
                   <figure>
                     <img src="/public/img/Blue-flag/planche-masumi-seiya-07.webp" alt="planche-masumi-seiya-07">
                     <figcaption>Ecran 4</figcaption>
                   </figure>
               </div>
-              <div id="ecran-8" class="carrousel_ecran">
+              <div id="ecran-15" class="carrousel_ecran">
                    <figure>
                       <img src="/public/img/Blue-flag/planche-masumi-seiya-08.webp" alt="planche-masumi-seiya-08">
                      <figcaption>Ecran 4</figcaption>
@@ -277,49 +293,49 @@
       
              <ul class="caroussel__links--dots">
                  <li> 
-                  <a href="#ecran-1" :class= "{actif:hrefCourant==='#ecran-1'}" >
-                     <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-1'}"></span>
+                  <a href="#ecran-8" :class= "{actif:hrefCourant==='#ecran-8'}" >
+                     <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-8'}"></span>
                   </a>
               </li>
 
                   <li>
-                    <a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}">
-                       <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-2'}"></span>
+                    <a href="#ecran-9" :class="{actif:hrefCourant==='#ecran-9'}">
+                       <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-9'}"></span>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}">
-                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-3'}"></span>
+                    <a href="#ecran-10" :class="{actif:hrefCourant==='#ecran-10'}">
+                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-10'}"></span>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}">
-                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-4'}"></span>
+                    <a href="#ecran-11" :class="{actif:hrefCourant==='#ecran-11'}">
+                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-11'}"></span>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}"></a>
-                    <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-5'}"></span>
+                    <a href="#ecran-12" :class="{actif:hrefCourant==='#ecran-12'}"></a>
+                    <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-12'}"></span>
                   </li>
 
                   <li>
-                    <a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}">
-                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-6'}"></span>
+                    <a href="#ecran-13" :class="{actif:hrefCourant==='#ecran-13'}">
+                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-13'}"></span>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}">
-                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-7'}"></span>
-                    </a></li>
+                    <a href="#ecran-14" :class="{actif:hrefCourant==='#ecran-14'}">
+                      <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-14'}"></span>
+                    </a>
+                  </li>
 
                   <li>
-                    <a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}"></a>
-                    <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-8'}"></span>
-
+                    <a href="#ecran-15" :class="{actif:hrefCourant==='#ecran-15'}"></a>
+                    <span class="carrousel__link--dot" :class="{dotactif:hrefCourant==='#ecran-15'}"></span>
                   </li>
 
              </ul>

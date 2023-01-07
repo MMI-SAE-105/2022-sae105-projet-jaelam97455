@@ -52,8 +52,7 @@
     .carrousel__link--dot{
       height: 15px;
       width: 15px;
-      background-color: var(--blanc);
-      border: 2px solid var(--bleu-clair);
+      background-color: var(--bleu-clair);
       border-radius: 50%;
       display: inline-block;
       margin: 2px;
