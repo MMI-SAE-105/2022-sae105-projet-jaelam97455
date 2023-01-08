@@ -13,4 +13,7 @@ img {
   font-family: 'Proza Libre';
   color: var(--bleu-clair);
 }
+.main__freize--img{
+  width: 85%;
+}
   

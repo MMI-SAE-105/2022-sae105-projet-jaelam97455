@@ -1,178 +1,211 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIs0pen: false}">
  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=, initial-scale=1.0">
       <title>Sweet Old Times</title>
       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script src='main.js'></script>
+      <script defer src="https://unpkg.com/alpinejs"></script>
  </head>
 
- <header>
-   <h1> Sweet Old Times </h1>
-     <a>
-       <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour">
-       <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" >
-     </a>
-    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
-   <nav>   
-        <a> 
-          <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-          <img src="/public/img/Icons/croix.svg" alt="croix">
-        </a> 
+  <header class="header__nav">
+   <div class="header__nav--items">
+      <a href="javascript:history.go(-1)"> <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour" class="header__nav--arrowbefore"> </a>
+      <a href="index.html"> <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" > </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+        <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+     </button>
+   </div>
+   <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+    <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
 
-         <h4> Articles </h4>
-       <ul>
-              <li> 
-                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
-              </li> 
-              <li>
-                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html"> Stressed out - Twenty One Pilots </a> 
-              </li>
+     <h4 class="menu__title"> Articles </h4>
+       <ul class="menu__nav--articles">
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+          </li> 
+          <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
 
-              <li>
-                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html">Blue Flag - Kaito </a>
-             </li> 
-              
-              <li> 
-                <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html">Le Voyage de Chihiro - Hayao Miyazaki </a>
-              </li>
+           <li class="menu__liste--article">
+             <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+           </li> 
+          
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+          </li>
 
-              <li>
-                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
-              </li>
-              <li> 
-                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
-              </li>
+          <li class="menu__liste--article">
+             <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+          </li>
 
-              <li> 
-                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
-              </li>
-       </ul> 
-         <h4> Informations complémentaires </h4>
-        <ul>
-            <li> 
-              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
-            </li>
-            
-            <li> 
-              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
-            </li>
-              
-            <li> 
-              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
-            </li>
-            <li> 
-              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
-            </li>
-        </ul>
-   </nav>
- </header>
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+          </li>
 
-  <main>     
-     <h5>film</h5>
-         <h1>Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h1>
-     <h2> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux qu'elle représente pour la nouvelle génération </h2>
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+          </li>
+      </ul> 
 
-      <h3> Synopsis</h3>
-          <p>   
-         Le film relate l’histoire de Chihiro, une jeune fille déménageant avec ses parents. Passant dans une forêt, ils trouvent un étrange portail menant à un parc à thème désert mais avec des restaurants proposant des mets délicieux. 
-         Chihiro refusa d’y toucher, mais ses parents engloutissent les plats et se transforment en porc. Chihiro se retrouve donc seule dans un monde fantastique en marge de la réalité.
-         </p>
-          <img src="public/img/chihiro-film/chihiro-sans-visage.webp" alt="Chihiro dans le train ">
-            <p> Chihiro prenant le train avec le Sans-visage, un esprit mystérieux </p>
-          <p> 
-             Pour sauver ses parents,celle-ci doit donc travailler au bain public, un établissement accueillant des esprits.
-             Cependant la patronne du lieu , Yubaba est une sorcière tyrannique et cupide qui n’hésitera pas à lui mettre des bâtons dans les roues. Mais Haku, un mystérieux garçon, va aider Chihiro durant ce périple.
+     <h4 class="menu__title"> Informations complémentaires </h4>
+
+       <ul class="menu__nav--infos">
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+           </li>
+
+           <li class="menu__liste--infos"> 
+           <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+          </li>
+      </ul>
+  </nav>  
+  </header>
+
+    
+
+  <main>         
+      <div class="article__heading"> 
+        <div class="article__heading--category"> <h5> film</h5></div>
+          <div class="article__heading--title"> <h1>Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h1> </div> 
+          <div class="article__heading--separation"></div>
+          <h2 class="article__heading--subtittle"> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux qu'elle représente pour la nouvelle génération</h2>       
+      </div> 
+ 
+      <h3 class="article__title--decoration"> Synopsis</h3>
+          <p class="article__text">   
+            Le film relate l’histoire de Chihiro, une jeune fille déménageant avec ses parents. Passant dans une forêt, ils trouvent un étrange portail menant à un parc à thème désert mais avec des restaurants proposant des mets délicieux.</p> 
+           <p class="article__text"> Chihiro refusa d’y toucher, mais ses parents engloutissent les plats et se transforment en porc. Chihiro se retrouve donc seule dans un monde fantastique en marge de la réalité.</p>
+        </p>
+          <figure> 
+            <img src="public/img/chihiro-film/chihiro-sans-visage.webp" alt="Chihiro dans le train" class="article__figure--img">
+             <figcaption> Chihiro prenant le train avec le Sans-visage, un esprit mystérieux </figcaption>
+          </figure>
+          <p class="article__text">  Pour sauver ses parents,celle-ci doit donc travailler au bain public, un établissement accueillant des esprits.</p>
+            <p> Cependant la patronne du lieu , Yubaba est une sorcière tyrannique et cupide qui n’hésitera pas à lui mettre des bâtons dans les roues. Mais Haku, un mystérieux garçon, va aider Chihiro durant ce périple.
           </p>
-
-         <img src="public/img/chihiro-film/yubaba.webp" alt="Yubaba sorcière">
-         <img src="public/img/chihiro-film/haku.webp" alt="Chihiro rencontre Haku ">
-           <p>  Chihiro rencontrant Yubaba et Haku </p>
-      <h3> Analyse </h3>
-          <p> 
-             Ce célèbre film de Miyazaki dépeint dans un univers onirique et poétique la société moderne et le périple que représente la vie . 
+           <figure> 
+             <img src="public/img/chihiro-film/yubaba.webp" alt="Yubaba sorcière" class="article__figure--img">
+             <img src="public/img/chihiro-film/haku.webp" alt="Chihiro rencontre Haku " class="article__figure--img">
+             <figcaption>  Chihiro rencontrant Yubaba et Haku </figcaption>
+           </figure>
+      <h3 class="article__title--decoration"> Analyse </h3>
+          <p class="article__text"> 
+             Ce célèbre film de Miyazaki dépeint dans un univers onirique et poétique la société moderne et le périple que représente la vie . </p>
+          <p class=article__text">
              Chihiro est une enfant insouciante et capricieuse qui va se retrouver face aux responsabilités d’un travail et dans un nouveau monde qui l’entoure sans ses parents. Ce sera une épreuve qui la fera grandir.
           </p>
-         <img src="public/img/chihiro-film/noireaudes-chihiro.webp" alt="Chihiro et les noireaudes">
-          <p> Chihiro aidant une noireaude à transporter du charbon </p>
-       <h3> Mise en scène et métaphore </h3>
-           <p> 
+          <figure > 
+            <img src="public/img/chihiro-film/noireaudes-chihiro.webp" alt="Chihiro et les noireaudes" class="article__figure--img">
+             <figcaption class="article__figure--legend"> Chihiro aidant une noireaude à transporter du charbon </figcaption>
+          </figure>
+       <h3 class="article__title--decoration"> Mise en scène et métaphore </h3>
+           <p class="article__text"> 
               Les plans fixe et la verticalité utilisé dans le film rend les décors qui font face au personnage plus immense. Ils illustrent le vertige et le sentiment de déroute de Chihiro.
-
+           </p>
+           <p class="article__text">
               En effet, le bain public serait une métaphore du monde du travail et de la société capitaliste. 
-            
+           </p>
+           <p class="article__text">  
              Chihiro représenterait parallèlement les jeunes générations se retrouvant soudainement dans ce monde dérouté face aux responsabilités qu’il représente.
            </p>
-          <img src="public/img/chihiro-film/plan-vertical-bain-publics.webp" alt="plan verticale Chihiro">
-            <p>Plan fixe de Chihiro face au bain public </p>
-            <p>
-                Le bâtiment en lui-même montre une hiérarchie sociale avec les noiraudes et Kamaji en bas de l’échelle effectuant un travail fastidieux en continu, et Yubaba vivant dans un cadre plus confortable montrant sa richesse.
+           <figure>
+              <img src="public/img/chihiro-film/plan-vertical-bain-publics.webp" alt="plan verticale Chihiro" class="article__figure--img">
+               <figcaption class="article__figure--legend">Plan fixe de Chihiro face au bain public </figcaption>
 
+            <p class="article__text">
+                Le bâtiment en lui-même montre une hiérarchie sociale avec les noiraudes et Kamaji en bas de l’échelle effectuant un travail fastidieux en continu, et Yubaba vivant dans un cadre plus confortable montrant sa richesse.
+            </p>
+            <p class="article__text">
                 L’attachement à l’argent est aussi montré par ce personnage et les employés des bains appâtés par l’or.
             </p>
-      <h3> Chihiro, fidèle à ses valeurs  </h3>
-          <p> 
+      <h3 class="article__title--decoration"> Chihiro, fidèle à ses valeurs  </h3>
+          <p class="article__text"> 
              Chihiro se démarque de ces derniers en comprenant que l’or n’est pas la chose la plus importante.
+          </p>
+          <P class="article__text">
              Par ce comportement Miyazaki dénonce la cupidité de certaines personnes dans nos sociétés prêtes à tout pour l’argent ou la consommation notamment avec le Sans-visage. 
+          </P>
+          <p class="article__text">
              Mais, certaines personnes comme Chihiro arriverait à se détacher de ce vice en se concentrant sur d’autres actions comme retrouver ses parents ou sauver Haku.
          </p>
-          <img src="public/img/chihiro-film/chihiro-or.webp" alt="chhiro refusant or"> 
-            <p> Chihiro refusant l’or que lui offre le sans-visage </p>
-            <p> 
+         <figure> 
+            <img src="public/img/chihiro-film/chihiro-or.webp" alt="chhiro refusant or"> 
+            <figcaption class="article__figure--legend"> Chihiro refusant l’or que lui offre le sans-visage </figcaption>
+          </figure>
+            <p class="article__text"> 
                 Parallèlement, cela pourrait montrer que les jeunes adultes d’aujourdhui seraient capable de s’affranchir de certaines valeurs de notre société notamment forger notre bonheur sur autre chose que l’argent.
             </p>
-         <img src="public/img/chihiro-film/chihiro-sans-visage-surconsommation.webp" alt=" Chihiro face au sans-visage">
-           <p> Chihiro face au sans-visage symbole de la surconsommation </p> 
-         <p> 
+            <figure> 
+              <img src="public/img/chihiro-film/chihiro-sans-visage-surconsommation.webp" alt=" Chihiro face au sans-visage">
+               <figcaption class="article__figure--legend"> Chihiro face au sans-visage symbole de la surconsommation </figcaption> 
+            </figure>
+         <p class="article__text"> 
             Le film évoque aussi l’aliénation du travail, notamment lorsque Yubaba “vole” le nom de Chihiro pour l’appeler Sen, oubliant ainsi peu à peu son identité
          </p>
-         <p> 
+         <p class="article__text"> 
              Au fil du film, Chihiro semble gagner en confiance et mieux évoluer dans cet univers grâce à la débrouillardise qu’elle s’est forgé. 
          </p>
-          <img src="public/img/chihiro-film/chihiro-haku.webp" alt="chihiro retrouvant haku"> 
-            <p> Chihiro retrouvant Haku </p>
-         <p> 
+         <figure> 
+           <img src="public/img/chihiro-film/chihiro-haku.webp" alt="chihiro retrouvant haku"> 
+            <figcaption class="article__figure--legend"> Chihiro retrouvant Haku </figcaption>
+          <figcaption
+         <p class="article__text"> 
              Par ce personnage, Miyazaki montre que notre vie représente un périple empli de difficultés et de défis, ou tout nous semble à un moment ou à un autre compliqué. Mais, en faisant preuve de courage et de ressources , ces épreuves nous permettront de grandir.
          </p>
-         <img src="public/img/chihiro-film/miyazaki.webp" alt="Hayao Miyazaki">
-           <p>  Si vous voulez en savoir sur les oeuvres de Miyazaki vous pouvez consulter sa filmographie !</p>
-       
-          <a href="#">Cliquez-ici </a>
+         <figure>
+            <img src="public/img/chihiro-film/miyazaki.webp" alt="Hayao Miyazaki" class="article__figure--img">
+           <figcaption>  Si vous voulez en savoir sur les oeuvres de Miyazaki vous pouvez consulter sa filmographie !</figcaption>
+         </figure>
+          <a href="filmographie.html" class="main__article--btn" >Cliquez-ici </a>
  </main>
-          <footer>
-            <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
-                <a 
-                  href="http://mmimontbeliard.com/">
-                  <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi"> 
-               </a> 
-          
-                <a 
-                   href="https://www.instagram.com/mmi_montbeliard/">
-                  <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
-               </a> 
-             <a
-                href="https://www.linkedin.com/school/mmimontbeliard/">
-               <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
-             </a>
-        
-              <a
-                 href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
-                 <img src="/public/img/Icons/youtube.svg" alt="youtube"> 
-              </a>
-              
-             <a><img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow"> </a> 
-        
-            <p> Jaël Amemoutou groupe A1 MMI</p>
-            <a href="mailto:jaelam302@gmail.com"> jaelam302@gmail.com </a> 
-              <a
-                  href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
-                 <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
-              </a> 
-              <a 
-                href="https://www.instagram.com/jaja_9745/">
-                <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
-              </a> 
-        
-           </footer>
+  <nav> 
+  <footer class="footer_fr">
+    <div class="footer__legal--dptmmi"> 
+      <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+      <a href="http://mmimontbeliard.com/">
+        <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi" class="footer__btn--dptmmi"> 
+      </a> 
+   </div>
+   <div class="footer__linksocial--dptmmi">        
+     <a 
+        href="https://www.instagram.com/mmi_montbeliard/">
+        <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+      </a> 
+      <a
+        href="https://www.linkedin.com/school/mmimontbeliard/">
+        <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+     </a>
+
+      <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+      <img src="/public/img/Icons/youtube.svg" alt="youtube">          
+      </a>
+    </div> 
+    <div class="footer__separation"></div>
+     <h4 class="footer__name--student"> Jaël Amemoutou groupe A1 MMI</h4>
+    <a href="mailto:jaelam302@gmail.com" class="footer__mailto--jael"> jaelam302@gmail.com </a> 
+
+    <div class="footer__social--jael">  
+      <div class="footer__link--jael">
+        <a href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+          <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
+        </a> 
+         <a href="https://www.instagram.com/jaja_9745/">
+           <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+        </a> 
+     </div>
+    </div>
+  </footer>
+  </nav>
+
 </html>
