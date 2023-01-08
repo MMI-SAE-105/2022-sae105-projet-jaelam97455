@@ -1,9 +1,10 @@
 .main__freize{
-    display: flex;
-    flex-direction: row;
+   padding: 3px;
+
 }
 
 .main__freize--container{
+    display: flex;
 
 }
 
@@ -11,16 +12,24 @@
     height: auto;
 }
 
-.main__freiz--element{
-margin: 3px;
+.main__freiz--elements{
+width: 70%;
 }
 
 .main__freize--legend{
-margin: 3px;
+ margin-bottom: 15px;
 }
-.main__freiz--element h4{
+
+.main__freize--title{
     color: var(--bleu-clair);
+    font-family: 'Viga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
 }
-.main__freiz--elements{
-    
+.main__freize--subtitle{
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1px;
 }

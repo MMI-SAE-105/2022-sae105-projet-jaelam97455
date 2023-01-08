@@ -1,129 +1,123 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIs0pen: false}">
  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=, initial-scale=1.0">
       <title>Sweet Old Times</title>
       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script src='main.js'></script>
+      <script defer src="https://unpkg.com/alpinejs"></script>
  </head>
 
- <header>
-   <h1> Sweet Old Times </h1>
-     <a>
-       <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour">
-       <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" >
-     </a>
-    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
-   <nav>   
-        <a> 
-          <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-          <img src="/public/img/Icons/croix.svg" alt="croix">
-        </a> 
+  <header class="header__nav">
+   <div class="header__nav--items">
+      <a href="javascript:history.go(-1)"> <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour" class="header__nav--arrowbefore"> </a>
+      <a href="index.html"> <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" > </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+        <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+     </button>
+   </div>
+   <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+    <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
 
-         <h4> Articles </h4>
-       <ul>
-              <li> 
-                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
-              </li> 
-              <li>
-                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html"> Stressed out - Twenty One Pilots </a> 
-              </li>
+     <h4 class="menu__title"> Articles </h4>
+       <ul class="menu__nav--articles">
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+          </li> 
+          <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
 
-              <li>
-                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html">Blue Flag - Kaito </a>
-             </li> 
-              
-              <li> 
-                <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html">Le Voyage de Chihiro - Hayao Miyazaki </a>
-              </li>
-
-              <li>
-                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
-              </li>
-              <li> 
-                <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html">Une crainte/regret pour ma génération </a>
-              </li>
-
-              <li> 
-                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
-              </li>
-       </ul> 
-         <h4> Informations complémentaires </h4>
-        <ul>
-            <li> 
-              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
-            </li>
-            
-            <li> 
-              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
-            </li>
-              
-            <li> 
-              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
-            </li>
-            <li> 
-              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
-            </li>
-        </ul>
-   </nav>
- </header>
- <main>     
-    <h5>Une crainte</h5>
-        <h1>Notre génération face à de nouveaux enjeux</h1>
-     <h2>Notre génération devra relever de nombreux défis et notre avenir sera impacté par des crises environnementales et politiques.</h2>
-         <p>   
-          En grandissant, nous prenons conscience que le monde dans lequel nous vivons n’est pas si simple et utopique.
-          Des changements vont s’opérer sur nous tout le long de notre vie. Mais nous ne sommes pas les seules.
-         Le monde dans lequel nous vivons change aussi.Le passage à l’âge adulte, c’est aussi prendre conscience des situations déplorables qui nous entourent.
-        </p>
-     <h3> Changement climatique : Un constat alarmant </h3>
-         <p> 
-          Le changement climatique est de plus en plus présent dans notre quotidien.Notamment avec la hausse des températures.
-          Dans le futur, les conditions environnementales de certains territoires pourraient encore plus se dégrader.
+           <li class="menu__liste--article">
+             <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+           </li> 
           
-          Plusieurs littoraux dans le monde risquent de disparaître à cause de la monté des eaux.
-          Selon le GIEC (Groupe d’experts intergouvernemental sur l’évolution du climat) 3,3 à 3,6 milliard de personnes seraient vulnérables faces aux catastrophes naturelles et à la montés de températures.
-          
-          La Californie et L’Inde sont des territoires menacé par cela.
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+          </li>
 
-         </p>
-        <img src="public/img/regret-espoir/incendie-californie.webp" alt="">
-         <p>  Californie et la multiplication des incendies </p>
-          <p> 
-            Certains écosystèmes insulaires sont aussi menacés par cette crise climatique. 
-            Ils sont notamment fragilisés par la montée des océans.
-            De plus, L’acidification des océans pourrait participer à la disparitions de certaines espèces
-            
-            Mais, quelle est l’une des causes de cette acidification ?
-            
-            L’océan absorbe 30% des émissions industrielles.Et celles-ci ne cessent d’augmenter
-          </p>
-          <span>  
-            "Près de la moitié de l'humanité vit dans la zone de danger - aujourd'hui et maintenant. De nombreux écosystèmes ont atteint le point de non-retour”
-            Antonio Guterres Secrétaire générale de l’ONU
-          </span>
-     <h3> L’inaction climatique poussera-t- elle notre perte ? </h3>
-         <p> 
-           Les plus grands dirigeants sont aussi ceux qui contrôlent des entreprises polluant énormément comme Total Energies. 
+          <li class="menu__liste--article">
+             <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+          </li>
 
-           Cependant, malgré les alertes des scientifiques et des ONG, les actions pour le climat à une échelle globale restent restreintes.
-          
-           Les entreprises continuent leur activité comme si les ressources utilisées (eau,minerai,charbon,gaz etc) étaient infinies.  
-        </p>
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+          </li>
+
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+          </li>
+      </ul> 
+
+     <h4 class="menu__title"> Informations complémentaires </h4>
+
+       <ul class="menu__nav--infos">
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+           </li>
+
+           <li class="menu__liste--infos"> 
+           <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+          </li>
+      </ul>
+  </nav>  
+  </header>
+   <main>
+      <div class="main__article"> 
+           <div class="article__heading"> 
+              <div class="article__heading--category"> <h5>Une crainte<</h5></div>
+              <div class="article__heading--title"> <h1>Notre génération face à de nouveaux enjeux</h1> </div> 
+              <div class="article__heading--separation"></div>
+               <h2 class="article__heading--subtittle">Notre génération devra relever de nombreux défis et notre avenir sera impacté par des crises environnementales et politiques.</h2>
+          </div> 
+            <p class="article__text"> En grandissant, nous prenons conscience que le monde dans lequel nous vivons n’est pas si simple et utopique.</p>
+            <p class="article__text"> Des changements vont s’opérer sur nous tout le long de notre vie. Mais nous ne sommes pas les seules.</p>
+            <p class="article__text">Le monde dans lequel nous vivons change aussi.Le passage à l’âge adulte, c’est aussi prendre conscience des situations déplorables qui nous entourent. </p>
+         <h3 class="article__title--decoration"> Changement climatique : Un constat alarmant  </h3>
+              <p class="article__text"> Le changement climatique est de plus en plus présent dans notre quotidien.Notamment avec la hausse des températures.</p>
+              <p class="article__text">Dans le futur, les conditions environnementales de certains territoires pourraient encore plus se dégrader.</p>
+              <p class="article__text"> Plusieurs littoraux dans le monde risquent de disparaître à cause de la monté des eaux.
+              <p class="article__text"> Selon le GIEC (Groupe d’experts intergouvernemental sur l’évolution du climat) 3,3 à 3,6 milliard de personnes seraient vulnérables faces aux catastrophes naturelles et à la montés de températures.</p>
+              <p class="article__text"> La Californie et L’Inde sont des territoires menacé par cela.</p> 
+              <figure> 
+                 <img src="public/img/regret-espoir/incendie-californie.webp" alt="incendie-californie" class="article__figure--img">
+                 <figcaption class="article__figure--legend">  Californie et la multiplication des incendies </figcaption>
+              </figure>
+              <p class="article__text"> 
+                 Certains écosystèmes insulaires sont aussi menacés par cette crise climatique. 
+                 "Ils sont notamment fragilisés par la montée des océans.
+              </p class="article__text">
+              <p class="article__text"> De plus, L’acidification des océans pourrait participer à la disparitions de certaines espèces </p>           
+              <p class="article__text"> Mais, quelle est l’une des causes de cette acidification ? </p>     
+              <p class="article__text"> L’océan absorbe 30% des émissions industrielles.Et celles-ci ne cessent d’augmenter</p>
+              <blockquote>  
+               "Près de la moitié de l'humanité vit dans la zone de danger - aujourd'hui et maintenant. De nombreux écosystèmes ont atteint le point de non-retour”
+                Antonio Guterres Secrétaire générale de l’ONU
+             </blockquote>
+          <h3 class="article__title--decoration"> L’inaction climatique poussera-t- elle notre perte ? </h3>
+          <p class="article__text"> Les plus grands dirigeants sont aussi ceux qui contrôlent des entreprises polluant énormément comme Total Energies. </p>
+          <p class="article__text"> Cependant, malgré les alertes des scientifiques et des ONG, les actions pour le climat à une échelle globale restent restreintes.</p>
+          <p class="article__text">Les entreprises continuent leur activité comme si les ressources utilisées (eau,minerai,charbon,gaz etc) étaient infinies.</p>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4RKRXIKCBqvvyox933kLK9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-           <p> Podcast Spotify sur le sujet</p>
-           <p> 
-             Le modèle économique sur lequel est fondée notre société n’est pas viable écologiquement.
+           <figcaption> Podcast Spotify sur le sujet</figcaption>
+           <p class="article__text"> Le modèle économique sur lequel est fondée notre société n’est pas viable écologiquement.</p>
+           <p class="article__text"> Notre génération devra subir les conséquences de cette inaction et de cette surconsommation.
+           <p class="article__text"> crainte que j’aurai, ce serait qu’on ait à construire un avenir dans un monde qui risque de s’écrouler.(Du moins si l’on agit pas à temps) </p>
+           <figure> 
+              <img src="public/img/regret-espoir/pollution-atmosphérique-industrielle.webp" alt="Usine industrielle">
+              <figcaption> Une usine industriel </figcaption> 
+            </figure>
 
-             Notre génération devra subir les conséquences de cette inaction et de cette surconsommation.
-            
-             La crainte que j’aurai, ce serait qu’on ait à construire un avenir dans un monde qui risque de s’écrouler.(Du moins si l’on agit pas à temps)
-           </p>
-           <img src="public/img/regret-espoir/pollution-atmosphérique-industrielle.webp" alt="Usine industrielle">
-           <p> Une usine industriel </p> 
-
-     <h3> Les droits fondamentaux et leur enjeux </h3>
+     <h3 class="article__title--decoration"> Les droits fondamentaux et leur enjeux </h3>
         <p> 
            Le climat n’est pas le seul enjeu présent pour notre futur. Les crises politiques et sociales y sont aussi importantes .
 
@@ -165,6 +159,7 @@
             
             Notre génération devra plus que jamais se battre pour ses droits
           </p>
+    </div>
 </main>
 
 <nav> 
