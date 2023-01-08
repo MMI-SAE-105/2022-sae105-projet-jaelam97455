@@ -1,0 +1,20 @@
+.main__freize{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__freize--container{
+
+}
+
+.main__freize--line{
+    height: auto;
+}
+
+.main__freiz--element{
+margin: 3px;
+}
+
+.main__freize--legend{
+margin: 3px;
+}

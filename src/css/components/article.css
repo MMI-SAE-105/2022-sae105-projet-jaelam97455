@@ -7,7 +7,7 @@
 }
 .article__heading--title{
     text-align: center;
-    margin: 5px;
+    margin: 9px;
 }
 
   
@@ -93,9 +93,22 @@ margin-bottom: 2rem;
 
 }
 
+.main__article--btn{
+    background-color: var(--bleu);
+    color: var(--blanc);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+
+}
+
 .main__article{
     margin: 5%;
 }
 .article__text{
     margin: 5px;
+}
+.article__text--link{
+    color: var(--bleu-clair);
 }

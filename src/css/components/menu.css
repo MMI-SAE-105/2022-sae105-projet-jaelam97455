@@ -23,12 +23,8 @@
   width: 34px;
 }
 .menu__title{
-  font-family: 'Josefin Sans';
-  font-weight: bold;
   font-size: 19px;
-  color: var(--bleu-clair);
   margin: 13px;
-
 }
 
 .menu__nav--articles{

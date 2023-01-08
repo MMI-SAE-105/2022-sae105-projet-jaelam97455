@@ -13,7 +13,12 @@ body{
 h1{
     font-family: 'Viga';
     color: var(--bleu-clair);
-    font-size: 19px;
+    font-size: 22px;
+}
+h4{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: var(--bleu-clair);
 }
 
 h5{
