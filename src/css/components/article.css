@@ -127,3 +127,6 @@ margin-bottom: 2rem;
 .article__text--link{
     color: var(--bleu-clair);
 }
+.article__videos{
+    margin: 4px ;
+}
