@@ -18,5 +18,8 @@ img {
 }
 
 .project__img--student{
-    width: 70%;
+    width: 65%;
+    margin-bottom: 4px;
+    padding: 1rem;
+    margin-inline: 50px;
 }

@@ -126,8 +126,17 @@ margin-bottom: 2rem;
 }
 .article__text--link{
     color: var(--bleu-clair);
+    margin-inline: 35px;
 }
 .project__text--student{
     color: var(--bleu-clair);
     text-align: center;
+}
+.glossary__defintion{
+    color: var(--bleu-clair);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.glossary__text{
+margin-bottom: 3px;
 }
