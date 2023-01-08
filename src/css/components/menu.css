@@ -25,6 +25,9 @@
 .menu__title{
   font-size: 19px;
   margin: 13px;
+  font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: var(--bleu-clair);
 }
 
 .menu__nav--articles{
