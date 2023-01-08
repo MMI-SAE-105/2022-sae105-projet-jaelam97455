@@ -3,6 +3,10 @@
     padding: 2px;
 
 }
+.footer_en{
+    background-color: var(--bleu-foncé);
+    padding: 2px;
+}
 .footer__legal--dptmmi{
     display: flex;
     left: 5px;

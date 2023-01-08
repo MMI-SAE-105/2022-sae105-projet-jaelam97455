@@ -10,68 +10,79 @@
       <script src='main.js'></script>
       <script defer src="https://unpkg.com/alpinejs"></script>
  </head>
- <header> 
-  <div class="headerhomepage--fr">  
-     <div class="headerhomepage__btn"> 
-
-       <a href="/ENGL/homepage.html"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="headerhomepage__btn--FR"> </a>
-
-       <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
-          <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
-       </button>
-
-      <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
-         <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
-       
-         <h4 class="menu__title"> Articles </h4>
-          <ul class="menu__nav--articles">
-             <li class="menu__liste--article"> 
-               <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="/FR/reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
-             </li> 
-             <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="/FR/stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
-
-             <li class="menu__liste--article">
-                <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="/FR/blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
-            </li> 
-             
-             <li class="menu__liste--article"> 
-               <img src="/public/img/Icons/film.svg" alt="film"> <a href="/FR/voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
-             </li>
-
-             <li class="menu__liste--article">
-                <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="/FR/filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
-             </li>
-
-             <li class="menu__liste--article"> 
-               <img src="/public/img/Icons/world.svg" alt="world"> <a href="/FR/crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
-             </li>
-
-             <li class="menu__liste--article"> 
-               <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="/FR/espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
-             </li>
-         </ul> 
-        <h4 class="menu__title"> Informations complémentaires </h4>
-          <ul class="menu__nav--infos">
-             <li class="menu__liste--infos"> 
-               <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="/FR/a-propos.html" class="menu__link--info "> À propos</a>
-            </li>
-           
-             <li class="menu__liste--infos"> 
-               <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="/FR/glossaire.html" class="menu__link--info">Glossaire </a>
-            </li>
-             
-             <li class="menu__liste--infos"> 
-               <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="/FR/contact.html" class="menu__link--info">Contact </a> 
-            </li>
-            <li class="menu__liste--infos"> 
-              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="/FR/autres-projets.html" class="menu__link--info">Autres projets </a> 
-            </li>
-         </ul>
-       </nav>
-     </div>
-   </div>  
-</header>
+ <!DOCTYPE html>
+ <html lang="fr" x-data="{menuIs0pen: false}">
+  <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=, initial-scale=1.0">
+       <title>Sweet Old Times</title>
+       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+       <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+       <script defer src="https://unpkg.com/alpinejs"></script>
+  </head>
  
+  <header> 
+    <div class="headerhomepage--fr">  
+       <div class="headerhomepage__btn"> 
+ 
+         <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="headerhomepage__btn--FR"> </a>
+ 
+         <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+            <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+         </button>
+ 
+        <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+           <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
+         
+           <h4 class="menu__title"> Articles </h4>
+            <ul class="menu__nav--articles">
+               <li class="menu__liste--article"> 
+                 <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+               </li> 
+               <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
+ 
+               <li class="menu__liste--article">
+                  <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+              </li> 
+               
+               <li class="menu__liste--article"> 
+                 <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+               </li>
+ 
+               <li class="menu__liste--article">
+                  <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+               </li>
+ 
+               <li class="menu__liste--article"> 
+                 <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+               </li>
+ 
+               <li class="menu__liste--article"> 
+                 <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+               </li>
+           </ul> 
+          <h4 class="menu__title"> Informations complémentaires </h4>
+            <ul class="menu__nav--infos">
+               <li class="menu__liste--infos"> 
+                 <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+              </li>
+             
+               <li class="menu__liste--infos"> 
+                 <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+              </li>
+               
+               <li class="menu__liste--infos"> 
+                 <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+              </li>
+              <li class="menu__liste--infos"> 
+                <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+              </li>
+           </ul>
+         </nav>
+       </div>
+     </div>  
+  </header>
    <main>
            <div class="article__heading"> 
              <div class="article__heading--category"> <h5> Lieu</h5></div>
