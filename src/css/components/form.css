@@ -1,0 +1,36 @@
+.form__input{
+    width: 80%;
+    height: 30%;
+    background-color: var(--bleu);
+    box-shadow: 2px 2px 10px black;
+    box-sizing: border-box;
+    border: 2px solid var(--bleu-clair);
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    color: var(--blanc);
+}
+.form__input--message{
+  width: 80%;
+    height: 30%;
+    background-color: var(--bleu);
+    box-shadow: 2px 2px 10px black;
+    box-sizing: border-box;
+    border: 2px solid var(--bleu-clair);
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    color: var(--blanc);
+}
+.form__input--btn{
+        background-color: var(--bleu);
+        color: var(--blanc);
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-left: 40%;
+    
+    }
