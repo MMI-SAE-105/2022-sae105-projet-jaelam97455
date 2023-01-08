@@ -17,7 +17,7 @@ width: 70%;
 }
 
 .main__freize--legend{
- margin-bottom: 15px;
+ margin-bottom: 18px;
 }
 
 .main__freize--title{
@@ -31,5 +31,6 @@ width: 70%;
     font-family: 'Josefin Sans';
     font-size: 16px;
     font-weight: 400;
-    margin: 1px;
+    margin: 2px;
+    padding-top: 2px;
 }
