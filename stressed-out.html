@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{menuIs0pen: false}">
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Sweet Old Times</title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script src='main.js'></script>
+      <script defer src="https://unpkg.com/alpinejs"></script>
+ </head>
+
+ <header> 
+  <div class="headerhomepage--fr">  
+     <div class="headerhomepage__btn"> 
+
+       <a href="/ENGL/homepage.html"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="headerhomepage__btn--FR"> </a>
+
+       <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+          <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+       </button>
+
+      <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+         <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
+       
+         <h4 class="menu__title"> Articles </h4>
+          <ul class="menu__nav--articles">
+             <li class="menu__liste--article"> 
+               <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="/FR/reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+             </li> 
+             <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="/FR/stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
+
+             <li class="menu__liste--article">
+                <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="/FR/blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+            </li> 
+             
+             <li class="menu__liste--article"> 
+               <img src="/public/img/Icons/film.svg" alt="film"> <a href="/FR/voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+             </li>
+
+             <li class="menu__liste--article">
+                <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="/FR/filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+             </li>
+
+             <li class="menu__liste--article"> 
+               <img src="/public/img/Icons/world.svg" alt="world"> <a href="/FR/crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+             </li>
+
+             <li class="menu__liste--article"> 
+               <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="/FR/espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+             </li>
+         </ul> 
+        <h4 class="menu__title"> Informations complémentaires </h4>
+          <ul class="menu__nav--infos">
+             <li class="menu__liste--infos"> 
+               <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="/FR/a-propos.html" class="menu__link--info "> À propos</a>
+            </li>
+           
+             <li class="menu__liste--infos"> 
+               <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="/FR/glossaire.html" class="menu__link--info">Glossaire </a>
+            </li>
+             
+             <li class="menu__liste--infos"> 
+               <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="/FR/contact.html" class="menu__link--info">Contact </a> 
+            </li>
+            <li class="menu__liste--infos"> 
+              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="/FR/autres-projets.html" class="menu__link--info">Autres projets </a> 
+            </li>
+         </ul>
+       </nav>
+     </div>
+   </div>  
+</header>
+  <main>     
+     <div class="article__heading"> 
+        <div class="article__heading--category"> <h5> Musique</h5></div>
+        <div class="article__heading--title"> <h1>Stressed out - Twenty One Pilot pilier du rock alternatif</h1> </div> 
+        <div class="article__heading--separation"></div>
+       <h2 class="article__heading--subtittle"> Au delà du rythme entrainant, une chanson au sens plus profond </h2>
+      </div>
+      
+      <div class="main__article">            
+         <h3 class="article__title--decoration"> Twenty One Pilot, qui sont-ils ?</h3>
+             <p class="article__text"> 
+                Twenty One Pilot est un groupe de rock et hip-hop alternatif composé de deux membres : 
+               Tyler Joseph et Josh Dun. Leur album “Blurry Face” sorti en 2015 a eu beaucoup de succès. 
+             </p>
+              <p class="article__text">
+               Les artistes abordent à travers des titres rythmés 
+                et entraînants des sujets tels que la nostalgie, l’anxiété ou la pression sociale.
+              </p>
+              <figure > 
+                <img src="public/img/TOP/Twenty-One-Pilots.webp" alt="membres twenty one pilots" class="article__figure--img" >
+                <figcaption class="article__figure--legend"> Les deux membres du groupe</figcaption>
+            </figure>
+
+            <p class="article__text"> 
+            Cela est notamment illustré par le personnage de Blurryface représentant leur insécurités face au monde extérieur et le côté sombre des chanteurs.
+           </p>
+            <p class="article__text"> De mon point de vue, j’ai apprécié leur musiques très tôt grâce à leur chanson “Heathen” tiré de “Suicid Squad.Cependant, je ne faisais pas réellement attention au sens des paroles .</p>
+            <p class="article__text">  Notamment celle du titre Stressed out. Ou les artistes évoquent de manière générale la nostalgie d’une époque révolue où tout était plus simple.Ce n’est que récemment 
+            que la signification du titre m’a frappé.</p>
+            <video controls width="340" src="https://medias.jael-amemoutou.fr/twenty-one-pilots-stressed-out-official-video.mp4  "></video>
+              <p> Clip vidéo de la chanson</p>
+        <h3 class="article__title--decoration"> Analyse paroles</h3>
+         <blockquote class="article__quote--lyrics"> 
+          <h4 class="article__quote--text"> 
+            “I was told when I get older all my fears would shrink
+            But now I'm insecure and I care what people think”
+          </h4> 
+          <h4 class="article__quote--text"> 
+            “My name's 'Blurryface' and I care what you think
+            My name's 'Blurryface' and I care what you think”
+          </h4>
+         </blockquote>
+          <p class="article__text"> On peut dors et déjà distinguer le thème de l’anxiété et du rapport aux autres dans ce premier passage.</p>
+          <p class="article__text"> Les interactions et l’image que nous avons de nous pendant l’enfance évolue lorsque nous grandissons. Le regard des autres devient de plus en plus pesant.</p>
+          <p class="article__text">
+            D’où le passage de Blurry face, une représentation des “démons intérieurs”
+            du chanteur épiant ses moindres gestes et alimentant son mal-être sur ce que pourrait penser les autres de lui et ce qu’il devrait faire.
+         </p>
+
+         <blockquote class="article__quote--lyrics">
+            <h4 class="article__quote--text"> 
+              “Wish we could turn back time, to the good old days
+            </h4>
+           <h4 class="article__quote--text"> 
+             When our momma sang us to sleep but now we're stressed out (oh)”
+           </h4>
+         </blockquote>
+        
+         <p class="article__text"> La nostalgie de ce passage est renforcée par la mise en scène du clip vidéo ou les chanteurs agissent presque comme des enfants.</p>
+            <figure>
+               <img src="public/img/TOP/capture-ecran-stressed-out-01.webp" alt="capture-ecran-01" class="article__figure--img">
+              <figcaption class="article__figure--legend"> Question paraissant dépassée pour leur âge des chanteurs souvent posé lorsqu’on est enfant </figcaption>
+            </figure>
+             <p class="article__text"> 
+                Cette volonté de revenir à l’enfance, loin des responsabilités et difficultés de l’âge adulte peut aussi s’expliquer par la pression sociale.
+                Devenir adulte c’est aussi se plier à certaines normes.
+             </p>
+             <p class="article__text">
+                Celles-ci pourrait nous freiner à être nous même ou à être plus créatif.Par exemple trouver à tout prix un travail qui rapporte.
+                En effet,l’âge adulte peut souvent en être le synonyme.Mais cela n’est pas forcément épanouissant.
+             </p>
+              <figure> 
+                  <img src="public/img/TOP/capture-ecran-stressed-out-02.webp" alt="capture-ecran-stressed-out-02">
+                  <figcaption> Les deux artistes sont allongés et rêvent de leur enfance </figcaption>
+              </figure>
+              <p class="article__text">Tandis que la voix de leurs proche les sermonnent pour les ramener à la réalité.</p>
+
+             <blockquote class="article__quote--lyrics"> “We used to play pretend, wake up, you need the money” </blockquote>
+             <p class="article__text"> 
+                Cette phrase énoncé par “Blurry face” montre l’aspect soudain de ce passage à l’âge adulte
+               Comme un réveil t’extirpant soudainement d’un songe.
+             </p>
+             <p class="article__text">
+               L’aspect de l’argent et de la famille faisant la morale dépeint une critique du conformiste de société 
+               ou l’argent compterait plus qu’une activité épanouissante nous représentant.
+             </p> 
+             <figure>              
+                <img src="public/img/TOP/capture-ecran-03.webp" alt="BlurryFace" class="article__figure--img" >
+                <figcaption class="article__figure--legend"> Représentation de Blurryface à la fin du clip vidéo </figcaption>
+             </figure>
+  
+               <p class="article__text"> 
+                 En effet la connotation de l’argent et de la pression des proches dépeint une critique du conformisme de société.Le plus important en étant adulte serait l’argent que tu fais en travaillant.</p>
+                 <p class="article__text"> Certain oublient ou méprise d’autres activités plus créatives.Notamment avec les proches des chanteur qui semble les réprimander sur leur activités musical.</p>
+                
+                <p class="article__text">
+                 Celle -ci semblerait futile à leur yeux.
+                 Même si l’activité n’est pas épanouissante.Rentrer dans l’âge adulte serait oublier
+                 qui nous sommes pour se soumettre aux normes.
+               </p>
+              <span class="article__text"> Ce célèbre titre dépeint de manière l’anxiété de grandir et les contraintes sociales et responsabilités de la vie d’adultes.</span>
+       </div>
+  </main>
+  <div class="tothetop">
+    <a href="#top"> 
+      <img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow-up-circle">
+    </a> 
+  </div>
+  <nav> 
+    <footer class="footer_fr">
+    <div class="footer__legal--dptmmi"> 
+     <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+       <a href="http://mmimontbeliard.com/">
+          <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi" class="footer__btn--dptmmi"> 
+       </a> 
+    </div>
+   <div class="footer__linksocial--dptmmi">        
+      <a 
+        href="https://www.instagram.com/mmi_montbeliard/">
+        <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+      </a> 
+      <a
+        href="https://www.linkedin.com/school/mmimontbeliard/">
+        <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+     </a>
+  
+       <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+        <img src="/public/img/Icons/youtube.svg" alt="youtube">          
+      </a>
+    </div> 
+    <div class="footer__separation"></div>
+    <h4 class="footer__name--student"> Jaël Amemoutou groupe A1 MMI</h4>
+    <a href="mailto:jaelam302@gmail.com" class="footer__mailto--jael"> jaelam302@gmail.com </a> 
+  
+   <div class="footer__social--jael">  
+     <div class="footer__link--jael">
+         <a href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+           <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
+        </a> 
+        <a href="https://www.instagram.com/jaja_9745/">
+           <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+        </a> 
+      </div>
+   </div>
+    </footer>
+  </nav>
+  
+
+</html>

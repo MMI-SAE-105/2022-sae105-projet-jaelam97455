@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIs0pen: false}">
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Sweet Old Times</title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script defer src="https://unpkg.com/alpinejs"></script>
+ </head>
+
+ <header> 
+   <div class="headerhomepage--fr">  
+      <div class="headerhomepage__btn"> 
+
+        <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="headerhomepage__btn--FR"> </a>
+
+        <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+           <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+        </button>
+
+       <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+          <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
+        
+          <h4 class="menu__title"> Articles </h4>
+           <ul class="menu__nav--articles">
+              <li class="menu__liste--article"> 
+                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="/FR/reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+              </li> 
+              <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="/FR/stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
+
+              <li class="menu__liste--article">
+                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="/FR/blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+             </li> 
+              
+              <li class="menu__liste--article"> 
+                <img src="/public/img/Icons/film.svg" alt="film"> <a href="/FR/voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+              </li>
+
+              <li class="menu__liste--article">
+                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="/FR/filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+              </li>
+
+              <li class="menu__liste--article"> 
+                <img src="/public/img/Icons/world.svg" alt="world"> <a href="/FR/crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+              </li>
+
+              <li class="menu__liste--article"> 
+                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="/FR/espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+              </li>
+          </ul> 
+         <h4 class="menu__title"> Informations complémentaires </h4>
+           <ul class="menu__nav--infos">
+              <li class="menu__liste--infos"> 
+                <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="/FR/a-propos.html" class="menu__link--info "> À propos</a>
+             </li>
+            
+              <li class="menu__liste--infos"> 
+                <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="/FR/glossaire.html" class="menu__link--info">Glossaire </a>
+             </li>
+              
+              <li class="menu__liste--infos"> 
+                <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="/FR/contact.html" class="menu__link--info">Contact </a> 
+             </li>
+             <li class="menu__liste--infos"> 
+               <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="/FR/autres-projets.html" class="menu__link--info">Autres projets </a> 
+             </li>
+          </ul>
+        </nav>
+      </div>
+    </div>  
+ </header>
+
+
+     <p class="accueil__text--intro">
+      Avez-vous déjà écrit une lettre à vous-même ? Une réplique destinée à la personne que vous deviendrait en traversant le temps.
+       Vous pourrez replonger dans vos espoirs et craintes d’antan…
+     </p>
+
+    <p class="accueil__text--intro">
+      Mais aussi vous remémorez des choses qui vous ont marqué et que vous avez apprécié !
+      Comme un lieu, une musique, un film ou encore un livre.
+   </p>
+   <p class="accueil__text--intro"> 
+    C’est en quelque sorte le concept de ce site !
+    Il y est retracé ici mon point de vue sur le passage à “l’âge adulte” et les changements que cela apporte. Mais aussi les inquiétudes du rapport aux autres dans notre société.
+   </p>
+    <p class="accueil__text--intro">
+       Il revient à vous de vous y plonger !
+    </p>
+
+        <blockquote class="homepage__quote--lyrics"> 
+         <h4> 
+          T’es au moment d’ta vie où tu peux devenir c’que tu veux Le même moment où c’est l’plus dur de savoir c’que tu veux 
+         </h4>
+          <h4> 
+            -Oreslan-
+            -Note pour trop tard- 
+          </h4>
+        </blockquote>
+      
+      <section class="article__presentation--rowreverse">
+             <a> <img src="/public/img/accueil/cirque-mafate.webp" alt="mafate" class="article__presentation--visual"> </a>
+
+             <div class="article__presentation--caption">
+               <h2> Mafate - lieu emblématique de la Réunion</h2>
+               <p class="article__presentation--excerpt"> La beauté des lieux naturels : un moyen de se ressourcer et de revenir à l’essentiel</p>
+
+               <a href="/FR/reunion.html" class="article__presentation--btn">En savoir plus </a>
+            </div>
+     </section>
+     <div class="article__heading--separation"> </div>
+
+      <section class="article__presentation--row">
+           <a> <img src="/public/img/accueil/twenty-one-pilots.webp" alt="twentyonepilots" class="article__presentation--visual"></a>
+
+           <div class="article__presentation--caption"> 
+              <h2> Stressed out - Twenty One Pilot pilier du rock alternatif</h2>
+              <p class="article__presentation--excerpt"> Au delà du rythme entrainant, une chanson au sens plus profond</p>
+
+              <a href="/Fr/stressed-out.html" class="article__presentation--btn"> En savoir plus </a>
+          </div>
+       </section>
+       <div class="article__heading--separation"> </div>
+
+      <section class="article__presentation--rowreverse">
+           <a> <img src="/public/img/accueil/Blue-flag.webp" alt="Blue_flag" class="article__presentation--visual"></a>
+
+           <div class="article__presentation--caption"> 
+              <h2>Blue Flag : un panorama réaliste de la jeunesse</h2>
+               <p class="article__presentation--excerpt"> Un manga relatant les peines joies d’une jeunesse au carrefour de leur vie</p>
+
+              <a href="/FR/blue-flag.html" class="article__presentation--btn"> En savoir plus </a>
+          </div>
+     </section>
+
+     <div class="article__heading--separation"> </div>
+
+     <section class="article__presentation--row">
+      <a> <img src="/public/img/accueil/voyage_chihiro_v1.webp" alt="Le_Voyage_de_Chihiro" class="article__presentation--visual"></a>
+
+      <div class="article__presentation--caption"> 
+         <h2> Le Voyage de Chihiro : Périple de la vie selon Miyazaki</h2>
+         <p class="article__presentation--excerpt"> Un chef d'œuvre de l'animation japonaise représentant notre société et les enjeux...</p>
+
+         <a href="/FR/voyage-chihiro.html" class="article__presentation--btn"> En savoir plus </a>
+      </div>
+     </section>
+
+     <div class="article__heading--separation"> </div>
+
+      <section class="article__presentation--rowreverse">
+            <a> <img src="/public/img/accueil/crainte-changementclimatique.webp" alt="crainte" class="article__presentation--visual"></a>
+
+         <div class="article__presentation--caption"> 
+           <h2> Notre génération face à de nouveaux enjeux</h2>
+            <p class="article__presentation--excerpt"> Notre génération devra relever de nombreux défis et notre avenir...</p>
+
+            <a href="/FR/crainte-regret.html" class="article__presentation--btn" >En savoir plus </a>
+         </div>
+     </section>
+
+     <div class="article__heading--separation"> </div>
+
+     <section class="article__presentation--row">
+         <a> <img src="/public/img/accueil/espoir-normalisationparole.webp" alt="parole" class="article__presentation--visual"></a>
+
+         <div class="article__presentation--caption"> 
+            <h2> Une génération qui normalise la prise de parole</h2>
+             <p class="article__presentation--excerpt"> Une génération qui ose parler de sujets longt-emps délaissés afin de faire entendre...</p>
+
+             <a href="/FR/espoir.html" class="article__presentation--btn"> En savoir plus </a>
+        </div>
+    </section>
+    
+    <div class="tothetop">
+      <a href="#top"> 
+        <img src="/public/img/Icons/arrow-up-circle.svg" alt="arrow-up-circle">
+      </a> 
+    </div>
+
+ <nav> 
+   <footer class="footer_fr">
+    <div class="footer__legal--dptmmi"> 
+      <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+        <a href="http://mmimontbeliard.com/">
+           <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi" class="footer__btn--dptmmi"> 
+        </a> 
+   </div>
+    <div class="footer__linksocial--dptmmi">        
+       <a 
+         href="https://www.instagram.com/mmi_montbeliard/">
+         <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+       </a> 
+       <a
+         href="https://www.linkedin.com/school/mmimontbeliard/">
+         <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+      </a>
+
+      <a
+         href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+         <img src="/public/img/Icons/youtube.svg" alt="youtube">          
+      </a>
+   </div> 
+   <div class="footer__separation"> 
+  </div>
+
+ <h4 class="footer__name--student"> Jaël Amemoutou groupe A1 MMI</h4>
+ <a href="mailto:jaelam302@gmail.com" class="footer__mailto--jael"> jaelam302@gmail.com </a> 
+ 
+    <div class="footer__social--jael">  
+      <div class="footer__link--jael">
+          <a href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+            <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
+         </a> 
+         <a href="https://www.instagram.com/jaja_9745/">
+            <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+         </a> 
+      </div>
+    </div>
+   </footer>
+ </nav>
+
+</html>

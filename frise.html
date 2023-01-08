@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{menuIs0pen: false}">
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=, initial-scale=1.0">
+      <title>Sweet Old Times</title>
+      <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script src='main.js'></script>
+      <script defer src="https://unpkg.com/alpinejs"></script>
+ </head>
+
+  <header class="header__nav">
+   <div class="header__nav--items">
+      <a href="javascript:history.go(-1)"> <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour" class="header__nav--arrowbefore"> </a>
+      <a href="index.html"> <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" > </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+        <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+     </button>
+   </div>
+   <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+    <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
+
+     <h4 class="menu__title"> Articles </h4>
+       <ul class="menu__nav--articles">
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+          </li> 
+          <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
+
+           <li class="menu__liste--article">
+             <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+           </li> 
+          
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+          </li>
+
+          <li class="menu__liste--article">
+             <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+          </li>
+
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+          </li>
+
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+          </li>
+      </ul> 
+
+     <h4 class="menu__title"> Informations complémentaires </h4>
+
+       <ul class="menu__nav--infos">
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+           </li>
+
+           <li class="menu__liste--infos"> 
+           <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+          </li>
+      </ul>
+  </nav>  
+  </header>
+  <main>
+      <div class="article__heading"> 
+        <div class="article__heading--category"> <h5> Lieu</h5></div>
+        <div class="article__heading--title"> <h1>Mafate - lieu emblématique de la Réunion</h1> </div> 
+        <div class="article__heading--separation"></div>
+         <h2 class="article__heading--subtittle"> Retrouvez-ici d’autres lieux naturels emblématiques classés au patrimoine mondiale de l’UNESCO</h2> 
+      </div>
+     <div class="main__freize"> 
+        <div class="main__freize--container"> 
+          <div class="main__freize--line">
+            <img src="/public/img/Réunion/arrow_freize.webp" alt="arrow"> 
+         </div>
+          <div class="main__freiz--elements"> 
+           <div class="main__freiz--element1">
+            <img src="public/img/Réunion/piton-fournaise-reunion.webp" alt="piton Fournaise Réunion">
+            <div class="main__freize--legend"> 
+              <h4 class="main__freize--title">2010 - Piton cirque et remparts de la Réunion</h4>
+              <h5 class="main__freize--subtitle"> Lieux naturels insulaires avec un volcan actif  </h5>
+            </div>
+            </div>
+            <div class="main__freiz--element2"> 
+            <img src="/public/img/Réunion/fjord-norvegien.webp" alt="fjord norvégien" class="main__freize--img"> 
+            <div class="main__freize--legend"> 
+              <h4 class="main__freize--title">  2005 - Fjord norvégien </h4>
+              <h5 class="main__freize--subtitle"> L’une des plus longues vallées du monde avec des paysages variés et escarpés </h5>
+            </div>
+            </div>
+            <div class="main__freiz--element3">
+            <div class="main__freize--legend"> 
+              <img src="/public/img/Réunion/parc-kilimandjaroo.webp" alt="Kilimandjaro Afrique" class="main__freize--img"> 
+               <h4 class="main__freize--title">  1987 - Parc du Kilimandjaro - Tanzanie</h4>
+              <h5 class="main__freize--subtitle"> Massif volcanique étant le point culminant de l’Afrique </h5>
+            </div> 
+            </div>
+            <div class="main__freiz--element4">
+            <div class="main__freize--legend"> 
+              <img src="/public/img/Réunion/parc-des-lacs-plitvice.webp" alt="lac plitvice croatie" class="main__freize--img"> 
+               <h4 class="main__freize--title">1979 - Parc des lacs Plitvice - Croatie   </h4>
+              <h5 class="main__freize--subtitle"> Magnifique paysage naturel  avec des forêts et lacs et un écosystème variés </h5>
+           </div> 
+          </div> 
+        </div>
+      </div>
+ </main>
+
+ <nav> 
+  <nav> 
+    <footer class="footer_fr">
+    <div class="footer__legal--dptmmi"> 
+     <h4>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</h4>
+       <a href="http://mmimontbeliard.com/">
+          <img src="/public/img/Icons/Logo_MMI.svg" alt="logoMMi" class="footer__btn--dptmmi"> 
+       </a> 
+    </div>
+   <div class="footer__linksocial--dptmmi">        
+      <a 
+        href="https://www.instagram.com/mmi_montbeliard/">
+        <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+      </a> 
+      <a
+        href="https://www.linkedin.com/school/mmimontbeliard/">
+        <img src="/public/img/Icons/linkedin.svg" alt="linkedin">
+     </a>
+  
+       <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg">
+        <img src="/public/img/Icons/youtube.svg" alt="youtube">          
+      </a>
+    </div> 
+    <div class="footer__separation"></div>
+    <h4 class="footer__name--student"> Jaël Amemoutou groupe A1 MMI</h4>
+    <a href="mailto:jaelam302@gmail.com" class="footer__mailto--jael"> jaelam302@gmail.com </a> 
+  
+   <div class="footer__social--jael">  
+     <div class="footer__link--jael">
+         <a href="https://www.linkedin.com/in/ja%C3%ABl-amemoutou-80378923a/">
+           <img src="/public/img/Icons/linkedin.svg" alt="linkedin"> 
+        </a> 
+        <a href="https://www.instagram.com/jaja_9745/">
+           <img src="/public/img/Icons/instagram.svg" alt="instagram"> 
+        </a> 
+      </div>
+   </div>
+    </footer>
+  </nav>
+
+</html>
