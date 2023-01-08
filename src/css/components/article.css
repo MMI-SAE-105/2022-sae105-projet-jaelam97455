@@ -127,3 +127,7 @@ margin-bottom: 2rem;
 .article__text--link{
     color: var(--bleu-clair);
 }
+.project__text--student{
+    color: var(--bleu-clair);
+    text-align: center;
+}
