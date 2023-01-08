@@ -1,96 +1,104 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIs0pen: false}">
  <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=, initial-scale=1.0">
       <title>Sweet Old Times</title>
       <link rel="stylesheet" href="/src/css/style.css" type="text/css"/>
+      <link rel="icon" href="public/img/Icons/logo_nav_clock.svg">
+      <script src='main.js'></script>
+      <script defer src="https://unpkg.com/alpinejs"></script>
  </head>
 
- <header>
-     <a>
-       <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour">
-       <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" >
-     </a>
-    <img src="/public/img/Icons/menu-burger.svg" alt="menu menu-burger">
-   <nav>   
-        <a> 
-          <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais">
-          <img src="/public/img/Icons/croix.svg" alt="croix">
-        </a> 
+  <header class="header__nav">
+   <div class="header__nav--items">
+      <a href="javascript:history.go(-1)"> <img src="/public/img/Icons/flèche-retour.svg" alt="flèche-retour" class="header__nav--arrowbefore"> </a>
+      <a href="index.html"> <img src="/public/img/Icons/logo-Sweet-Old-Times.svg" alt= "logo Sweet Old Times" > </a>
+      <button aria-controls="mainNav" @click="menuIs0pen = ! menuIs0pen" class="headerhomepage__btn--menu"> 
+        <img src="/public/img/Icons/menu-burger.svg" alt="menu-burger">
+     </button>
+   </div>
+   <nav id="mainNav" x-show="menuIs0pen" x-transition.duration.500ms class="menu">  
+    <a href="#"> <img src="/public/img/Icons/drapeau-francais.svg" alt="icone francais" class="menu__btn--FR"> </a>
 
-         <h4> Articles </h4>
-       <ul>
-              <li> 
-                <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html">Cirque de Mafate </a> 
-              </li> 
-              <li>
-                 <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html"> Stressed out - Twenty One Pilots </a> 
-              </li>
+     <h4 class="menu__title"> Articles </h4>
+       <ul class="menu__nav--articles">
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/mountains.svg" alt="montagne lieu"> <a href="reunion.html" class="menu__link--article"> Cirque de Mafate </a> 
+          </li> 
+          <li class="menu__liste--article"> <img src="/public/img/Icons/Music.svg" alt="musique"> <a href="stressed-out.html" class="menu__link--article"> Stressed out - Twenty One Pilots </a> </li>
 
-              <li>
-                 <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html">Blue Flag - Kaito </a>
-             </li> 
-              
-              <li> 
-                <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html">Le Voyage de Chihiro - Hayao Miyazaki </a>
-              </li>
+           <li class="menu__liste--article">
+             <img src="/public/img/Icons/book-alt.svg" alt="livre"> <a href="blue-flag.html" class="menu__link--article">Blue Flag - Kaito </a>
+           </li> 
+          
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/film.svg" alt="film"> <a href="voyage-chihiro.html" class=" menu__link--article">Le Voyage de Chihiro - Hayao Miyazaki </a>
+          </li>
 
-              <li>
-                 <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="#">Filmographie Miyazaki </a>
-              </li>
-              <li> 
-                <img src="/public/img/Icons/world.svg" alt="world"> <a href="#">Une crainte/regret pour ma génération </a>
-              </li>
+          <li class="menu__liste--article">
+             <img src="/public/img/Icons/film-blanc.svg" alt="film"> <a href="filmographie.html" class=" menu__link--article">Filmographie Miyazaki </a>
+          </li>
 
-              <li> 
-                <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="#">Un espoir pour ma génération </a>
-              </li>
-       </ul> 
-         <h4> Informations complémentaires </h4>
-        <ul>
-            <li> 
-              <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="#"> À propos</a>
-            </li>
-            
-            <li> 
-              <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="#">Glossaire </a>
-            </li>
-              
-            <li> 
-              <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="#">Contact </a> 
-            </li>
-            <li> 
-              <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="#">Autres projets </a> 
-            </li>
-        </ul>
-   </nav>
- </header>
- 
- <main>     
-    <h5> Info</h5>
-        <h1> À propos </h1>
-       <img src="public/img/avatars/jaël-avatar.webp"> 
-       <p>  Je m’appelle Jaël Amemoutou et je suis en première année de BUT MMI à Montbéliard.</p>
-       <p>
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/world.svg" alt="world"> <a href="crainte-regret.html" class="menu__link--article">Une crainte/regret pour ma génération </a>
+          </li>
+
+          <li class="menu__liste--article"> 
+            <img src="/public/img/Icons/megaphone.svg" alt="megaphone"> <a href="espoir.html" class="menu__link--article">Un espoir pour ma génération </a>
+          </li>
+      </ul> 
+
+     <h4 class="menu__title"> Informations complémentaires </h4>
+
+       <ul class="menu__nav--infos">
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/portrait.svg" alt="portrait"> <a href="a-propos.html" class="menu__link--info "> À propos</a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/comment-alt.svg" alt="comment"> <a href="glossaire.html" class="menu__link--info">Glossaire </a>
+           </li>
+
+           <li class="menu__liste--infos"> 
+          <img src="/public/img/Icons/envelope-download.svg" alt="livre"> <a href="contact.html" class="menu__link--info">Contact </a> 
+           </li>
+
+           <li class="menu__liste--infos"> 
+           <img src="/public/img/Icons/portrait-blanc.svg" alt="portrait"> <a href="autres-projets.html" class="menu__link--info">Autres projets </a> 
+          </li>
+      </ul>
+  </nav>  
+  </header>
+   <main>
+           <div class="article__heading"> 
+             <div class="article__heading--category"> <h5> Info</h5></div>
+             <div class="article__heading--title"> <h1>À propos </h1> </div> 
+             <div class="article__heading--separation"></div>
+             <h2 class="article__heading--subtittle"> La beauté des lieux naturels : un moyen de se ressourcer et de revenir à l’essentiel</h2>
+          </div> 
+
+       <img src="public/img/avatars/jaël-avatar.webp" alt="jael_avatar"> 
+       <p class="article__text">  Je m’appelle Jaël Amemoutou et je suis en première année de BUT MMI à Montbéliard.</p>
+       <p class="article__text">
           Ce site a été créé dans le cadre du projet du semestre 1 “Notes pour plus tard” inspiré du titre d’Orelsan “Note pour trop tard”
            ou l’artiste relate à sa version du passé des conseils dispersés.
+       </p>
+        <p class="article__text"> Dans le cadre de ce projet nous avions donc à nous adresser à la personne que l’on deviendrait dans le futur. </p>
+         <p class="article__text"> 
+            Nous avons eu un choix libre pour les thématiques choisies.
+            C'est pourquoi ,mes œuvres et sujets abordés peuvent paraître très large.
+         </p>
+  
+        <p class="article__text"> J’ai choisi d’évoquer de manière générale le changement , notamment le passage de l'adolescence à l’âge adulte.</p>
 
-         Dans le cadre de ce projet nous avions donc à nous adresser à la personne que l’on deviendrait dans le futur.
-
-         Nous avons eu un choix libre pour les thématiques choisies.
-         C'est pourquoi ,mes œuvres et sujets abordés peuvent paraître très large.
-
-         J’ai choisi d’évoquer de manière générale le changement , notamment le passage de l'adolescence à l’âge adulte.
-
-         Mais aussi la manière dont on évolue dans notre société .
-
-         La personne que je deviendrai pourrait se remémorer les difficultés de cette période clé à travers des œuvres qui nous ont marqué.
-
-         Les sujets abordés comme la nostalgie et la déroute face à notre avenir pourraient aussi permettre à certaines personnes de se reconnaître dans ce qu’elles vivent ou ont vécu.
-
-          En effet ,ce site web vous est aussi destiné. Peut-être qu’il vous laissera perplexe, ou peut-être que son contenu vous plaira et qu’il vous apportera de la réflexion.J'espère qu’il vous laissera une bonne impression.
+         <p class="article__text"> 
+            Mais aussi la manière dont on évolue dans notre société .
+             La personne que je deviendrai pourrait se remémorer les difficultés de cette période clé à travers des œuvres qui nous ont marqué.
+         </p>
+          <p class="article__text">Les sujets abordés comme la nostalgie et la déroute face à notre avenir pourraient aussi permettre à certaines personnes de se reconnaître dans ce qu’elles vivent ou ont vécu.</p>
+          <p class="article__text"> En effet ,ce site web vous est aussi destiné. Peut-être qu’il vous laissera perplexe, ou peut-être que son contenu vous plaira et qu’il vous apportera de la réflexion.J'espère qu’il vous laissera une bonne impression.</p>
 
        </p>
   </main>
